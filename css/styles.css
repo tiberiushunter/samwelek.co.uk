@@ -35,7 +35,7 @@ section {
 
 section h2 {
 	opacity: 0;
-	transition: opacity 4000ms;
+	transition: opacity 2500ms;
 }
 
 section.is-visible h2 {
@@ -43,12 +43,12 @@ section.is-visible h2 {
 }
 
 section:nth-child(1) {
-    background-color: #192842;
+    background-color: #003366;
     color: white;
 }
 
 section:nth-child(2) {
-    background-color: #FF0000;
+    background-color: #a30b1a;
     color: white;
 }
 
