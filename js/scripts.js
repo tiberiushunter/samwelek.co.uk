@@ -8,7 +8,6 @@ let options = {
 const callback = (entries, observer) => {
   entries.forEach(entry => {
 		const { target } = entry
-		console.log(entry, target)
 		
 		if (entry.intersectionRatio >= 0.25) {
 			target.classList.add("is-visible")
