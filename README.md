@@ -8,8 +8,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
-![Project Maintenance][maintenance-shield] 
+[![Website Status][aws-shield]][url]
+![Project Maintenance][maintenance-shield]
 [![MIT License][license-shield]][license-url]
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -54,24 +54,36 @@ Project Link: [https://github.com/tiberiushunter/samwelek.co.uk][project-url]
 
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/samwelek.co.uk
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
-[contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/samwelek.co.uk.svg?style=flat-square
+
+[aws-shield]: https://img.shields.io/website?down_message=offline&label=status&logo=amazon-aws&style=for-the-badge&up_message=online&url=https%3A%2F%2Fsamwelek.co.uk
+
+[url]: https://samwelek.co.uk
+
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?style=for-the-badge
+
+[contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/samwelek.co.uk.svg?style=for-the-badge
 [contributors-url]: https://github.com/tiberiushunter/samwelek.co.uk/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/tiberiushunter/samwelek.co.uk.svg?style=flat-square
+
+[forks-shield]: https://img.shields.io/github/forks/tiberiushunter/samwelek.co.uk.svg?style=for-the-badge
 [forks-url]: https://github.com/tiberiushunter/samwelek.co.uk/network/members
-[stars-shield]: https://img.shields.io/github/stars/tiberiushunter/samwelek.co.uk.svg?style=flat-square
+
+[stars-shield]: https://img.shields.io/github/stars/tiberiushunter/samwelek.co.uk.svg?style=for-the-badge
 [stars-url]: https://github.com/tiberiushunter/samwelek.co.uk/stargazers
-[issues-shield]: https://img.shields.io/github/issues/tiberiushunter/samwelek.co.uk.svg?style=flat-square
+
+[issues-shield]: https://img.shields.io/github/issues/tiberiushunter/samwelek.co.uk.svg?style=for-the-badge
 [issues-url]: https://github.com/tiberiushunter/samwelek.co.uk/issues
-[license-shield]: https://img.shields.io/github/license/tiberiushunter/samwelek.co.uk.svg?style=flat-square
+
+[license-shield]: https://img.shields.io/github/license/tiberiushunter/samwelek.co.uk.svg?style=for-the-badge
 [license-url]: https://github.com/tiberiushunter/samwelek.co.uk/blob/main/LICENSE
-[github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=flat-square&logo=github&colorB=555
 
 <!-- Contact Specific -->
+[github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=for-the-badge&logo=github&colorB=555
 [github-url]: https://github.com/tiberiushunter
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sam-welek
-[twitter-shield]: https://img.shields.io/badge/-Twitter-black.svg?style=flat-square&logo=twitter&colorB=555
+
+[twitter-shield]: https://img.shields.io/badge/-Twitter-black.svg?style=for-the-badge&logo=twitter&colorB=555
 [twitter-url]: https://twitter.com/samwelek
 
 <!-- Acknowledgement Specific -->
