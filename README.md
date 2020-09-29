@@ -19,7 +19,7 @@
 
 <!-- ABOUT -->
 ## About
-A repository for my personal website
+A repository for my personal website, it's purely made with HTML, CSS, and JS as it's just a static site with some links and information thrown together - it's hosted on AWS in a S3 bucket served by CloudFront.
 
 <!-- CONTRIBUTING -->
 ## Contributing

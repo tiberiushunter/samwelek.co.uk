@@ -13,3 +13,5 @@ jobs:
         aws-region: eu-west-2
     - name: Deploy to S3 bucket
       run: aws s3 sync ./dist/ ${{ secrets.S3_BUCKET }} --delete
+    - name: Invalidate CloudFront Objects
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID }} --path "/*"
