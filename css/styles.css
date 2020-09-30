@@ -37,19 +37,19 @@ section {
   flex-direction: column;
 }
 
-section h2 {
+section h2.sample {
   opacity: 0;
   transition: opacity 2500ms;
   animation-delay: 250ms;
 }
 
-section.is-visible h2 {
+section.is-visible h2.sample{
   opacity: 1;
 }
 
 section:nth-child(1) {
   background-color: #003366;
-  color: white;
+	color: white;
 }
 
 section:nth-child(2) {
@@ -58,13 +58,9 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
-  background-color: #000000;
-  color: white;
-}
-
-section:nth-child(4) {
   background-color: #ffffff;
 }
+
 
 @media screen and (max-width: 1024px) {
   .profile-img {
@@ -85,14 +81,16 @@ section:nth-child(4) {
 .profile-img {
   height: auto;
   background-size: cover;
-  border-radius: 50%;
+	border-radius: 50%;
+  margin-top: -15vh
 }
 
-.profile-container {
-  margin: 1vh;
+.typing {
+	margin: 1vh;
 }
 
-.profile-container p {
+.typing h2,
+.typing h3 {
   border-right: 0.05em solid orange;
   font-family: "Source Code Pro", monospace;
   white-space: nowrap;
@@ -100,21 +98,21 @@ section:nth-child(4) {
   margin: 0 auto;
 }
 
-.profile-container p:nth-child(1) {
+.typing h2 {
   font-weight: 600;
   font-size: 2.5em;
-  animation: type 2s steps(9, end);
+  animation: type 1.5s steps(9, end);
   animation-fill-mode: forwards;
   width: 5.5em;
 }
 
-.profile-container p:nth-child(2) {
+.typing h3 {
   font-weight: 400;
   font-size: 1.75em;
   width: 10.9em;
   opacity: 0;
   animation: type2 2.5s steps(18, end);
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
