@@ -22,5 +22,3 @@ const observer = new IntersectionObserver(callback, options)
 sections.forEach((section, index) => {
   observer.observe(section)
 })
-
-window.onload(removeClass())

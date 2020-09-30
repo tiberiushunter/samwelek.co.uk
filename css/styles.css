@@ -1,63 +1,147 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Source Code Pro", monospace;
 }
 
 body {
-	margin: 0;
-	font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .scroll-container {
-	height: 100vh;
-	overflow-y: scroll;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 @supports (scroll-snap-type: y mandatory) {
-    .scroll-container {
-      height: 100vh;
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-    }
-  
-    section {
-      height: 100vh;
-      scroll-snap-align: center;
-    }
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
+  section {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+}
 
 section {
-	height: 100vh;
-	padding: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-section h1 {
-	opacity: 0;
-	transition: opacity 2500ms;
+section h2 {
+  opacity: 0;
+  transition: opacity 2500ms;
+  animation-delay: 250ms;
 }
 
-section.is-visible h1 {
-	opacity: 1;
+section.is-visible h2 {
+  opacity: 1;
 }
 
 section:nth-child(1) {
-    background-color: #003366;
-    color: white;
+  background-color: #003366;
+  color: white;
 }
 
 section:nth-child(2) {
-    background-color: #a30b1a;
-    color: white;
+  background-color: #a30b1a;
+  color: white;
 }
 
 section:nth-child(3) {
-    background-color: #000000;
-    color: white;
-
+  background-color: #000000;
+  color: white;
 }
 
 section:nth-child(4) {
-	background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-img {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .profile-img {
+    width: 22.5vw;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .profile-img {
+    width: 12.5vw;
+  }
+}
+
+.profile-img {
+  height: auto;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profile-container {
+  margin: 1vh;
+}
+
+.profile-container p {
+  border-right: 0.05em solid orange;
+  font-family: "Source Code Pro", monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-container p:nth-child(1) {
+  font-weight: 600;
+  font-size: 2.5em;
+  animation: type 2s steps(9, end);
+  animation-fill-mode: forwards;
+  width: 5.5em;
+}
+
+.profile-container p:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.75em;
+  width: 10.9em;
+  opacity: 0;
+  animation: type2 2.5s steps(18, end);
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.05em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.05em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
 }
