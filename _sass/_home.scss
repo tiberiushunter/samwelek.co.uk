@@ -1,35 +1,11 @@
-* {
-  box-sizing: border-box;
-}
 
-h2 {
-  font-family: "Source Code Pro", monospace;
-}
 
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-}
-
-.scroll-container {
+.home-section {
   height: 100vh;
-  overflow-y: scroll;
 }
 
-@supports (scroll-snap-type: y mandatory) {
-  .scroll-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-  section {
-    height: 100vh;
-    scroll-snap-align: center;
-  }
-}
-
-section {
-  height: 100vh;
+.home-section-content {
+  height: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -37,30 +13,25 @@ section {
   flex-direction: column;
 }
 
-section h2.sample {
+.home-section-content h2.sample {
   opacity: 0;
   transition: opacity 2500ms;
   animation-delay: 250ms;
 }
 
-section.is-visible h2.sample{
+.home-section.is-visible h2.sample{
   opacity: 1;
 }
 
-section:nth-child(1) {
+.home-section:nth-child(1) {
   background-color: #003366;
 	color: white;
 }
 
-section:nth-child(2) {
+.home-section:nth-child(2) {
   background-color: #a30b1a;
   color: white;
 }
-
-section:nth-child(3) {
-  background-color: #ffffff;
-}
-
 
 @media screen and (max-width: 1024px) {
   .profile-img {
@@ -82,35 +53,36 @@ section:nth-child(3) {
   height: auto;
   background-size: cover;
 	border-radius: 50%;
-  margin-top: -15vh
+  margin-top: -50vh
 }
 
 .typing {
 	margin: 1vh;
 }
 
-.typing h2,
-.typing h3,
-.typing p{
-  border-right: 0.1em solid orange;
+.typing{
   font-family: "Source Code Pro", monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
 .typing h2 {
+  border-right: 0.1em solid orange;
+
   font-weight: 600;
   font-size: 2.5em;
   animation: type 0.8s steps(9, end);
   animation-fill-mode: forwards;
 	width: 5.5em;
 	opacity: 0;
-	animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
 
 }
 
 .typing h3 {
+  border-right: 0.1em solid orange;
+
   font-weight: 400;
   font-size: 1.75em;
   width: 10.9em;
@@ -118,16 +90,24 @@ section:nth-child(3) {
   animation: type 1.5s steps(18, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .typing p {
+  border-right: 0.1em solid orange;
+
   font-weight: 400;
 	font-size: 1.75em;
   width: 14em;
   opacity: 0;
   animation: type 2.25s steps(23, end);
 	animation-delay: 4s;
-	animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .typing p em {

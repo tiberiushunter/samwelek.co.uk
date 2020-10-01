@@ -19,7 +19,7 @@
 
 <!-- ABOUT -->
 ## About
-A repository for my personal website, it's purely made with HTML, CSS, and JS as it's just a static site with some links and information thrown together - it's hosted on AWS in a S3 bucket served by CloudFront.
+A repository for my personal website, it's <del>purely made with HTML, CSS, and JS</del> been made with Jekyll as it's a static site with some links and information thrown together - it's hosted on AWS in a S3 bucket served by CloudFront.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -33,10 +33,11 @@ Distributed under the MIT License. See [LICENSE][license-url] for more informati
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [rxaiver's GitHub Emoji Cheat Sheet][1]
-* [Img Shields][2]
-* [Choose an Open Source License][3]
-* [othneildrew's Best README Template][4]
+* [Dark Poole Jekyll Theme][1]
+* [rxaiver's GitHub Emoji Cheat Sheet][2]
+* [Img Shields][3]
+* [Choose an Open Source License][4]
+* [othneildrew's Best README Template][5]
 
 <!-- CONTACT -->
 ## Contact
@@ -87,7 +88,8 @@ Project Link: [https://github.com/tiberiushunter/samwelek.co.uk][project-url]
 [twitter-url]: https://twitter.com/samwelek
 
 <!-- Acknowledgement Specific -->
-[1]: https://gist.github.com/rxaviers/7360908
-[2]: https://shields.io
-[3]: https://choosealicense.com
-[4]: https://github.com/othneildrew/Best-README-Template
+[1]: https://github.com/andrewhwanpark/dark-poole
+[2]: https://gist.github.com/rxaviers/7360908
+[3]: https://shields.io
+[4]: https://choosealicense.com
+[5]: https://github.com/othneildrew/Best-README-Template

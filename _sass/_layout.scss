@@ -1,0 +1,55 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@supports (scroll-snap-type: y mandatory) {
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  section  {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header-container {
+  max-width: 115rem;
+  padding-left: var(--spacer-2);
+  padding-right: var(--spacer-2);
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.content-container {
+  max-width: 66rem;
+  padding-left: var(--spacer-2);
+  padding-right: var(--spacer-2);
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: var(--spacer-3);
+  margin-bottom: var(--spacer-3);
+}
+
+.home-footer {
+  max-width: 115rem;
+  padding-left: var(--spacer-2);
+  padding-right: var(--spacer-2);
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top: -6vh;
+}
+
