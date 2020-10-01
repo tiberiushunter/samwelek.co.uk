@@ -5,6 +5,7 @@
 .scroll-container {
   height: 100vh;
   overflow-y: scroll;
+  font-family: "Open Sans", sans-serif;
 }
 
 @supports (scroll-snap-type: y mandatory) {
