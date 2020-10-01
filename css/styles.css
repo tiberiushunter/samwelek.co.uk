@@ -90,8 +90,9 @@ section:nth-child(3) {
 }
 
 .typing h2,
-.typing h3 {
-  border-right: 0.05em solid orange;
+.typing h3,
+.typing p{
+  border-right: 0.1em solid orange;
   font-family: "Source Code Pro", monospace;
   white-space: nowrap;
   overflow: hidden;
@@ -101,9 +102,12 @@ section:nth-child(3) {
 .typing h2 {
   font-weight: 600;
   font-size: 2.5em;
-  animation: type 1.5s steps(9, end);
+  animation: type 0.8s steps(9, end);
   animation-fill-mode: forwards;
-  width: 5.5em;
+	width: 5.5em;
+	opacity: 0;
+	animation-delay: 0.5s;
+
 }
 
 .typing h3 {
@@ -111,24 +115,30 @@ section:nth-child(3) {
   font-size: 1.75em;
   width: 10.9em;
   opacity: 0;
-  animation: type2 2.5s steps(18, end);
+  animation: type 1.5s steps(18, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: 0.05em solid orange;
-  }
-  100% {
-    border: none;
-  }
+.typing p {
+  font-weight: 400;
+	font-size: 1.75em;
+  width: 14em;
+  opacity: 0;
+  animation: type 2.25s steps(23, end);
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
 }
 
-@keyframes type2 {
+.typing p em {
+	opacity: 0;
+	width: 1em;
+  animation: type 1s steps(2, end);
+	animation-delay: 7.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes type {
   0% {
     width: 0;
   }
@@ -136,7 +146,7 @@ section:nth-child(3) {
     opacity: 1;
   }
   99.9% {
-    border-right: 0.05em solid orange;
+    border-right: 0.1em solid orange;
   }
   100% {
     opacity: 1;
