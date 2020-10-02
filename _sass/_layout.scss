@@ -3,7 +3,7 @@
 // Styles for managing the structural hierarchy of the site.
 
 .scroll-container {
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: scroll;
 }
 
@@ -17,18 +17,6 @@
     height: 100vh;
     scroll-snap-align: center;
   }
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.header-container {
-  max-width: 115rem;
-  padding-left: var(--spacer-2);
-  padding-right: var(--spacer-2);
-  margin-left:  auto;
-  margin-right: auto;
 }
 
 .content-container {
@@ -45,11 +33,11 @@ footer {
 }
 
 .home-footer {
-  max-width: 115rem;
-  padding-left: var(--spacer-2);
-  padding-right: var(--spacer-2);
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 50rem;
+  height: 50px;
   margin-left:  auto;
   margin-right: auto;
-  margin-top: -10vh;
 }
 
