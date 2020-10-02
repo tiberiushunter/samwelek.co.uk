@@ -114,3 +114,10 @@ a[href^="#fnref:"] {
   font-weight: 300;
   margin-bottom: var(--spacer-2);
 }
+
+// Emoji
+
+img.emoji {
+  margin-bottom: 0;
+  display: inline;
+}
