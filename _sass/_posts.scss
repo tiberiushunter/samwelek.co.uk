@@ -5,7 +5,7 @@
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 
   li + li {
     margin-top: .25rem;
@@ -35,15 +35,26 @@
 .post-date {
   display: block;
   margin-top: -.5rem;
-  margin-bottom: var(--spacer);
   color: var(--gray-600);
+  font-size: 1.1rem;
 }
 
+// Tags
+.tags {
+  padding-bottom: var(--spacer-2);
+
+  a {
+    text-decoration: none;
+
+    small {
+      color: var(--gray-600);
+    }
+  }
+}
 
 // Related posts
 .related {
-  padding-top: var(--spacer-2);
-  padding-bottom: var(--spacer-2);
+  padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-2);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);

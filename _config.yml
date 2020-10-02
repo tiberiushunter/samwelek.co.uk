@@ -1,10 +1,18 @@
 # Setup
 title: Sam Welek
 url: https://samwelek.co.uk
-paginate: 1
 baseurl: ""
 permalink: pretty
 
+defaults:
+  - scope:
+      path: "_posts/blog"
+    values:
+      type: "blog"
+  - scope:
+      path: "_posts/projects"
+    values:
+      type: "projects"
 
 # Gems
 plugins:
