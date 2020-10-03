@@ -1,40 +1,14 @@
 
 
-.home-section {
-  height: 100vh;
-}
+
 
 .home-section-content {
-  height: 100vh;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.home-section-content.final{
-  height: 95vh;
-}
-
-.home-section-content h2.sample {
-  opacity: 0;
-  transition: opacity 2500ms;
-  animation-delay: 250ms;
-}
-
-.home-section.is-visible h2.sample{
-  opacity: 1;
-}
-
-.home-section:nth-child(1) {
-  background-color: #003366;
-	color: white;
-}
-
-.home-section:nth-child(2) {
-  background-color: #a30b1a;
-  color: white;
+  margin-top: 60vh;
 }
 
 @media screen and (max-width: 1024px) {

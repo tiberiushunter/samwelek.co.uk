@@ -2,23 +2,6 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-.scroll-container {
-  min-height: 100vh;
-  overflow-y: scroll;
-}
-
-@supports (scroll-snap-type: y mandatory) {
-  .scroll-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-  section  {
-    height: 100vh;
-    scroll-snap-align: center;
-  }
-}
-
 .content-container {
   max-width: 50rem;
   padding-left: var(--spacer-2);
@@ -33,7 +16,7 @@ footer {
 }
 
 .home-footer {
-   margin-bottom: 0;
-   margin-top: -0.5rem;
+  position: fixed;
+  bottom: 0;
 }
 

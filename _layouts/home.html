@@ -3,37 +3,34 @@
 {% include head.html %}
 
 <body>
+  <div class="content-container content">
+    <header class="masthead">
+      <h3 class="masthead-title">
+        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
 
-  <main class="scroll-container">
-    {{ content }}
-  </main>
+        <nav class="nav">
+          {% for nav in site.nav %}
+          <small><a href="{{ site.baseurl }}{{ nav.url }}/">{{ nav.title }}</a></small>
+          {% endfor %}
+        </nav>
+      </h3>
+    </header>
 
-  {% if site.ga_analytics %}
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i["GoogleAnalyticsObject"] = r;
-      (i[r] =
-        i[r] ||
-        function () {
-          (i[r].q = i[r].q || []).push(arguments);
-        }),
-        (i[r].l = 1 * new Date());
-      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m);
-    })(
-      window,
-      document,
-      "script",
-      "https://www.google-analytics.com/analytics.js",
-      "ga"
-    );
-    ga("create", "{{ site.ga_analytics }}", "auto");
-    ga("send", "pageview");
-  </script>
-  {% endif %}
-  <script src="js/scripts.js"></script>
+    <main class="home-layout">
+      {{ content }}
+    </main>
+    <hr />
+    <footer class="footer home-footer">
+      <small><a href="/privacy/">Privacy</a>
+        <small>Copyright
+          &copy;
+          <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. Sam Welek. All
+          rights
+          reserved.
+        </small>
+    </footer>
+  </div>
+  {% include cookie-consent.html %}
 </body>
 
 </html>

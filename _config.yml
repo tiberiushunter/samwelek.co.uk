@@ -37,9 +37,6 @@ sass:
 
 # Options
 
-# Replace this value and uncomment to enable Google Analytics tracking
-ga_analytics: UA-179510239-1
-
 # Specify the author for blog posts
 author:
   name: Sam Welek

@@ -1,47 +1,11 @@
 ---
 layout: home
-title: Home
 ---
 
-<section class="home-section">
-  <div class="content-container">
-    <header class="masthead">
-      <h3 class="masthead-title">
-        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-        <nav class="nav">
-          {% for nav in site.nav %}
-          <small><a href="{{ site.baseurl }}{{ nav.url }}/">{{ nav.title }}</a></small>
-          {% endfor %}
-        </nav>
-      </h3>
-    </header>
+<div class="home-section-content">
+  <img class="profile-img" src="assets/profile.jpg" alt="Profile Picture">
+  <div class="typing">
+    <h2>Sam Welek</h2>
+    <h3>Software Developer</h3>
   </div>
-
-  <div class="home-section-content">
-    <img class="profile-img" src="assets/profile.jpg" alt="Profile Picture">
-    <div class="typing">
-      <h2>Sam Welek</h2>
-      <h3>Software Developer</h3>
-    </div>
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="home-section-content">
-    <h2 class="sample">Come back soon once the page gets updated with content!</h2>
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="home-section-content final">
-    <h2 class="sample">Coming Soon...</h2>
-  </div>
-  <footer class="content-container footer home-footer">
-    <small>Copyright
-      &copy;
-      <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. Sam Welek. All
-      rights
-      reserved.
-    </small>
-  </footer>
-</section>
+</div>
