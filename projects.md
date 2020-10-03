@@ -14,5 +14,6 @@ subtitle: Browse all my current and past projects
 {% endfor %}
 </ul>
 
-<hr />
-<a href="/tags/">...or browse projects by Tag</a>
+
+<br />
+<span>...or browse projects by <a href="/tags/">tag</a></span>

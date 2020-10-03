@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-subtitle: Browse all my blog posts
+subtitle: Browse all my blog posts and guides
 ---
 
 {% assign posts = site.posts | where:"type", "blog" %}
@@ -14,5 +14,5 @@ subtitle: Browse all my blog posts
 {% endfor %}
 </ul>
 
-<hr />
-<a href="/tags/">...or browse blog posts by Tag</a>
+<br />
+<span>...or browse blog posts by <a href="/tags/">tag</a></span>

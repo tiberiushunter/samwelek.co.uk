@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark-poole">
-{% include head.html %}
+{% include common/head.html %}
 
 <body>
   <div class="content-container content">
@@ -21,16 +21,10 @@
     </main>
     <hr />
     <footer class="footer home-footer">
-      <small><a href="/privacy/">Privacy</a>
-        <small>Copyright
-          &copy;
-          <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. Sam Welek. All
-          rights
-          reserved.
-        </small>
+      {% include common/footer.html %}
     </footer>
   </div>
-  {% include cookie-consent.html %}
+  {% include cookies/cookie-consent.html %}
 </body>
 
 </html>
