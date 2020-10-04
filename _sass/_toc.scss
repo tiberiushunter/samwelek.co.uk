@@ -2,15 +2,16 @@
 
 #markdown-toc {
   padding: var(--spacer-2) var(--spacer-3);
-  margin-bottom: var(--spacer-2);
-  border: solid var(--border-color);
+  margin-bottom: var(--spacer);
   border-width: 1px 0;
+  padding-top:  var(--spacer);
+  padding-bottom: var(--spacer);
 
   &::before {
     display: block;
     margin-left: calc(var(--spacer-3) * -1);
     content: "Contents";
-    font-size: 85%;
+    font-size: 100%;
     font-weight: 500;
   }
 }

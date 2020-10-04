@@ -32,7 +32,6 @@
 	margin-top: -55vh;
 }
 
-
 .typing {
   margin: 1vh;
   font-family: "Source Code Pro", monospace;
@@ -43,7 +42,7 @@
 		font-weight: 600;
 		font-size: 1.5em;
     animation:  blinking-caret .562s ease-in-out 0s 6 forwards,
-                type-h1 .8s steps(9) 1.75s forwards;
+                type-h1 .8s steps(9) 1.4s forwards;
 		white-space: nowrap;
 		overflow: hidden;
     margin: 0 auto;

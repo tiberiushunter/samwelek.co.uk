@@ -70,8 +70,9 @@ abbr {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: var(--gray-500);
+  color: var(--gray-300);
   border-left: .25rem solid var(--border-color);
+  background-color: var(--gray-900);
 
   p:last-child {
     margin-bottom: 0;
@@ -121,8 +122,9 @@ a[href^="#fnref:"] {
 // Emoji
 
 img.emoji {
-  margin-bottom: 0;
+  margin-bottom: .3rem;
   display: inline;
+  vertical-align: middle;
 }
 
 // Footer

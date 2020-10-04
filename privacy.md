@@ -5,14 +5,20 @@ subtitle: Last updated 04 Oct 2020
 ---
 
 ## Introduction
+
 This website, [https://samwelek.co.uk](https://samwelek.co.uk) (hereinafter: "the website") is powered by Jekyll and is hosted on Amazon Web Services (AWS). We use cookies and scripts on our website to increase functionality and improve performance.
 
 Below we have detailed what cookies and scripts we have created as well as the ones created by third parties and explain how they are used with specific regards to privacy and personal data.
 
-### :information_source: What are cookies?
+- toc
+{: toc }
+
+> :grey_question: <b>What are cookies?</b>
+>
 > A cookie is a small file that is sent along with the pages of this website and is stored by your browser on the hard drive of your computer or another device. The information stored therein may be returned to the servers of the relevant third parties during a subsequent visit.
 
-### :information_source: What are scripts?
+> :grey_question: <b>What are scripts?</b>
+>
 > A script is a piece of program code that is used to make our website function properly and interactively. This code is executed locally on your device in your browser. 
 
 ## What Cookies and Scripts have we got in place?

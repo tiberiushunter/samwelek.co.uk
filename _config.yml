@@ -16,8 +16,6 @@ defaults:
 
 # Gems
 plugins:
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-seo-tag
   - jemoji
 

@@ -36,7 +36,7 @@
 .highlight .nl { color: #99f } /* Name.Label */
 .highlight .nn { color: #0cf; } /* Name.Namespace */
 .highlight .nt { color: #2f6f9f; } /* Name.Tag */
-.highlight .nv { color: #033 } /* Name.Variable */
+.highlight .nv { color: var(--grape) } /* Name.Variable */
 .highlight .ow { color: #000; } /* Operator.Word */
 .highlight .w { color: #bbb } /* Text.Whitespace */
 .highlight .mf { color: #f60 } /* Literal.Number.Float */
@@ -63,3 +63,12 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+
+.language-plaintext.highlighter-rouge {
+    color: var(--gold-700);
+    font-size: 85%;
+}
+#markdown-toc .language-plaintext.highlighter-rouge {
+    color: var(--link-color);
+}
