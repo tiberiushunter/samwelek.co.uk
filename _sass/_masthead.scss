@@ -10,6 +10,11 @@
 
 .masthead-title {
   margin-bottom: 0;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--heading-color);
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
 
   a {
     color: inherit;

@@ -5,8 +5,8 @@ layout: home
 <div class="home-section-content">
   <img class="profile-img" src="assets/profile.jpg" alt="Profile Picture">
   <div class="typing">
-    <h2>Sam Welek</h2>
-    <h3>Software Developer</h3>
+    <h1>Sam Welek</h1>
+    <h2>Software Developer</h2>
   </div>
 </div>
 

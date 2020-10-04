@@ -25,22 +25,18 @@
 	}
 }
 
-
-
 .profile-img {
 	height: auto;
 	background-size: cover;
 	border-radius: 50%;
-	margin-top: -50vh;
+	margin-top: -55vh;
 }
 
 .typing {
   margin: 1vh;
 	font-family: "Source Code Pro", monospace;
-	h2 {
-    padding-bottom:0;
+	h1 {
 		border-right: 0.1em solid orange;
-		border-bottom: 0;
 		font-weight: 600;
 		font-size: 1.5em;
 		animation: type 0.8s steps(9, end);
@@ -53,7 +49,9 @@
 		margin: 0 auto;
 		margin-bottom: 1vh;
 	}
-	h3 {
+	h2 {
+    padding-bottom: 0;
+    border-bottom: 0;
 		border-right: 0.1em solid orange;
 		font-weight: 400;
 		font-size: 1.25em;
