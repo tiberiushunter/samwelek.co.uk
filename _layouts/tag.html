@@ -7,9 +7,7 @@ layout: page
 <ul>
     {% for post in site.tags[page.tag] %}
     <li>
-        <a href="{{ post.url }}">{{ post.title }} &hyphen; <time
-                datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-        </a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
