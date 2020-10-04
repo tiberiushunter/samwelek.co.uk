@@ -34,7 +34,7 @@
 // Meta data line below post title
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -1.25rem;
   color: var(--gray-600);
   font-size: 1.1rem;
 }
@@ -54,7 +54,6 @@
 
 // Related posts
 .related {
-  padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-2);
   border-top: 1px solid var(--border-color);
 }

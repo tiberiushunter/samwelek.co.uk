@@ -31,16 +31,11 @@
 }
 
 .typing {
-	margin: 1vh;
-}
-
-.typing{
+  margin: 1vh;
   font-family: "Source Code Pro", monospace;
-}
-
-.typing h2 {
+  h2 {
   border-right: 0.1em solid orange;
-
+  border-bottom: 0;
   font-weight: 600;
   font-size: 1.5em;
   animation: type 0.8s steps(9, end);
@@ -52,10 +47,8 @@
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 1vh;
-
-}
-
-.typing h3 {
+  }
+   h3 {
   border-right: 0.1em solid orange;
 
   font-weight: 400;
@@ -69,6 +62,7 @@
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 2vh;
+}
 }
 
 @keyframes type {
