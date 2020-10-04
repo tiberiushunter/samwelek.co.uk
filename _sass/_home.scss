@@ -32,34 +32,32 @@
 	margin-top: -55vh;
 }
 
+
 .typing {
   margin: 1vh;
-	font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", monospace;
+
 	h1 {
-		border-right: 0.1em solid orange;
+    width: 0;
+    border-right: .1em solid transparent;
 		font-weight: 600;
 		font-size: 1.5em;
-		animation: type 0.8s steps(9, end);
-		animation-fill-mode: forwards;
-		width: 5.5em;
-		opacity: 0;
-		animation-delay: 0.75s;
+    animation:  blinking-caret .562s ease-in-out 0s 6 forwards,
+                type-h1 .8s steps(9) 1.75s forwards;
 		white-space: nowrap;
 		overflow: hidden;
-		margin: 0 auto;
-		margin-bottom: 1vh;
+    margin: 0 auto;
+		margin-bottom: 1.25vh;
 	}
 	h2 {
+    width: 0;
     padding-bottom: 0;
     border-bottom: 0;
-		border-right: 0.1em solid orange;
+		border-right: .1em solid transparent;
 		font-weight: 400;
 		font-size: 1.25em;
-		width: 10.9em;
-		opacity: 0;
-		animation: type 1.25s steps(18, end);
-		animation-delay: 2s;
-		animation-fill-mode: forwards;
+    animation:  blinking-caret .562s ease-in-out 3.3s 7 forwards,
+                type-h2 1.33s steps(18) 4s forwards;
 		white-space: nowrap;
 		overflow: hidden;
 		margin: 0 auto;
@@ -67,7 +65,7 @@
 	}
 }
 
-@keyframes type {
+@keyframes type-h1 {
 	0% {
 		width: 0;
 	}
@@ -75,10 +73,34 @@
 		opacity: 1;
 	}
 	99.9% {
-		border-right: 0.1em solid orange;
 	}
 	100% {
-		opacity: 1;
-		border: none;
+    opacity: 1;
+    width: 5.6em;
 	}
 }
+
+@keyframes type-h2 {
+	0% {
+		width: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	99.9% {
+	}
+	100% {
+    opacity: 1;
+    width: 10.9em;
+	}
+}
+
+@keyframes blinking-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--gold-800);
+    }
+  }

@@ -25,6 +25,11 @@
   --green: #40c057;
   --yellow: #fab005;
   --orange: #fd7e14;
+  --gold: #ffd700;
+
+  --gold-300: rgba(255, 215, 0, 0.3);
+  --gold-400: rgba(255, 215, 0, 0.4);
+  --gold-800: rgba(255, 215, 0, 0.8);
 
   --blue-300: #74c0fc;
   --blue-400: #4dabf7;
@@ -43,7 +48,7 @@
 
   --heading-color: var(--gray-900);
 
-  --border-color: var(--gray-300);
+  --border-color: var(--gold-300);
   --border-radius: 0.25rem;
 
   --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
@@ -66,7 +71,7 @@
     --link-color: var(--blue-300);
     --link-hover-color: var(--blue-400);
 
-    --border-color: rgba(255, 255, 255, 0.15);
+    --border-color: var(--gold-300);
 
     --code-bg: var(--gray-900);
   }
@@ -79,6 +84,7 @@
   --heading-color: var(--dark-poole-002);
   --link-color: var(--dark-poole-link-color);
   --link-hover-color: var(--dark-poole-link-hover);
-  --border-color: rgba(255, 255, 255, 0.15);
+  --border-color: var(--gray-800);
+  --table-color: var(--gray-700);
   --code-bg: var(--gray-900);
 }

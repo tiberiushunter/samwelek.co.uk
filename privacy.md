@@ -37,7 +37,7 @@ Below we have listed the third parties involved with our site to add functionali
 
 ### Google Analytics
 
-This website uses Google Analytics. **This only happens if you approve third party cookies and scripts.** 
+This website uses Google Analytics. **This only happens if you approve third party cookies and scripts.** We use this service to track page views, current users on the website, and keep track of the website's statistics over time.
 
 However, we have taken all actions we can to limit the power of Google. We have configured Google Analytics to anonymise IP addresses, use SSL at all times and we have agreed the [Data Processing Amendment](https://privacy.google.com/businesses/processorterms/) with Google.
 
