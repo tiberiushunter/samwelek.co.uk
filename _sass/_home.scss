@@ -1,82 +1,82 @@
 .home-section-content {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 55vh;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 55vh;
 }
 
 @media screen and (max-width: 1024px) {
-  .profile-img {
-    width: 30vw;
-  }
+	.profile-img {
+		width: 30vw;
+	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .profile-img {
-    width: 22.5vw;
-  }
+	.profile-img {
+		width: 22.5vw;
+	}
 }
 @media screen and (min-width: 1081px) {
-  .profile-img {
-    width: 12.5vw;
-  }
+	.profile-img {
+		width: 12.5vw;
+	}
 }
 
 .profile-img {
-  height: auto;
-  background-size: cover;
+	height: auto;
+	background-size: cover;
 	border-radius: 50%;
-  margin-top: -50vh
+	margin-top: -50vh;
 }
 
 .typing {
   margin: 1vh;
-  font-family: "Source Code Pro", monospace;
-  h2 {
-  border-right: 0.1em solid orange;
-  border-bottom: 0;
-  font-weight: 600;
-  font-size: 1.5em;
-  animation: type 0.8s steps(9, end);
-  animation-fill-mode: forwards;
-	width: 5.5em;
-	opacity: 0;
-  animation-delay: 0.75s;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-bottom: 1vh;
-  }
-   h3 {
-  border-right: 0.1em solid orange;
-
-  font-weight: 400;
-  font-size: 1.25em;
-  width: 10.9em;
-  opacity: 0;
-  animation: type 1.25s steps(18, end);
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-bottom: 2vh;
-}
+	font-family: "Source Code Pro", monospace;
+	h2 {
+    padding-bottom:0;
+		border-right: 0.1em solid orange;
+		border-bottom: 0;
+		font-weight: 600;
+		font-size: 1.5em;
+		animation: type 0.8s steps(9, end);
+		animation-fill-mode: forwards;
+		width: 5.5em;
+		opacity: 0;
+		animation-delay: 0.75s;
+		white-space: nowrap;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 1vh;
+	}
+	h3 {
+		border-right: 0.1em solid orange;
+		font-weight: 400;
+		font-size: 1.25em;
+		width: 10.9em;
+		opacity: 0;
+		animation: type 1.25s steps(18, end);
+		animation-delay: 2s;
+		animation-fill-mode: forwards;
+		white-space: nowrap;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 2vh;
+	}
 }
 
 @keyframes type {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: 0.1em solid orange;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
+	0% {
+		width: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	99.9% {
+		border-right: 0.1em solid orange;
+	}
+	100% {
+		opacity: 1;
+		border: none;
+	}
 }
