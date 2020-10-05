@@ -5,6 +5,11 @@ description: So this looks like this...
 tags: ["hello world", "jekyll"]
 ---
 
+<div class="post-cover">
+<img src="/assets/images{{ page.url }}cover.jpg" />
+<span class="cover-caption">Photo by <a href="https://unsplash.com/@lemonvlad?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vladislav Klapin</a> on <a href="https://unsplash.com/s/photos/hello?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+</div>
+
 ## Hello World! :wave:
 
 It took 15 commits and 5 days to realise that having a personal site built purely with <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and <abbr title="JavaScript">JS</abbr> was going to be a <del>nightmare</del> challenge in the long run. Realistically I just want to show off some projects, produce some guides on what I find difficult to get answers for, and the occasional post here and there - what I don't really want to be doing is handcrafting every single little button with loving care and attention for hours on end when I could be focusing on what's important.  

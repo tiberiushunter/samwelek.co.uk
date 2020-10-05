@@ -10,59 +10,6 @@
   margin-right: auto;
 }
 
-footer {
-  margin-top: var(--spacer-3);
-  margin-bottom: var(--spacer-3);
-  padding-top: var(--spacer-2);
-  border-top: 1px solid var(--border-color);
-}
-
-@media screen and (min-height: 1024px) {
-  .home-footer {
-    margin-top: calc(var(--spacer-3)*4);
-  }
-}
-@media screen and (max-height: 1024px) {
-  .home-footer {
-    margin-top: calc(var(--spacer-2)*5);
-  }
-}
-@media screen and (max-height: 760px) {
-  .home-footer {
-    margin-top: calc(var(--spacer-2));
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .shield {
-    margin-left: var(--spacer-3);
-    margin-right: var(--spacer-3);
-    img {
-      margin-left: 1rem;
-      margin-right: 1rem;    
-    }
-  }
-}
-@media screen and (max-width: 800px) {
-  .shield {
-    margin-left:var(--spacer);
-    margin-right:var(--spacer);
-    img {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;    
-    }
-  }
-}
-@media screen and (max-width: 400px) {
-  .shield {
-    margin-left:0;
-    margin-right:0; 
-    img {
-      margin-left: 0.1rem;
-      margin-right: 0.1rem;
-    } 
-  }
-}
 
 .shield {
   display: flex;
@@ -74,3 +21,84 @@ footer {
     margin-bottom: 0;
   }
 }
+
+footer {
+  margin-top: var(--spacer-3);
+  margin-bottom: var(--spacer-3);
+  padding-top: var(--spacer-2);
+  border-top: 1px solid var(--border-color);
+}
+
+
+.post-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-card {
+  max-width:50%;
+  padding:  var(--spacer-2);
+  text-align: center;
+  font-size: 110%;
+  a {
+    text-decoration: none;
+  }  
+  .date {
+    font-size: 75%;
+    font-style: italic;
+    }
+}
+
+/*Desktop Query*/
+@media only screen and (min-width: 768px) {
+  .home-footer {
+    margin-top: calc(var(--spacer-3)*2);
+  }
+
+  .shield {
+    margin-left: var(--spacer-3);
+    margin-right: var(--spacer-3);
+    img {
+      margin-left: 1rem;
+      margin-right: 1rem;    
+    }
+  }
+}
+
+/*Mobile Query*/
+@media only screen and (max-width: 480px) {
+  .home-footer {
+    margin-top: calc(var(--spacer-2)*1);
+  }
+
+  .shield {
+    margin-left:0;
+    margin-right:0; 
+    img {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+    } 
+  }
+  .post-card {
+    max-width:100%;
+  }
+}
+
+/*Tablet Query*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .home-footer {
+    margin-top: calc(var(--spacer-2));
+  }
+
+  .shield {
+    margin-left:var(--spacer);
+    margin-right:var(--spacer);
+    img {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;    
+    }
+  }
+}
+
+
+
