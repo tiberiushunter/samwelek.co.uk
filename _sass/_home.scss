@@ -41,8 +41,8 @@
     border-right: .1em solid transparent;
 		font-weight: 600;
 		font-size: 1.5em;
-    animation:  blinking-caret .562s ease-in-out 0s 6 forwards,
-                type-h1 .8s steps(9) 1.4s forwards;
+    animation:  blinking-caret .562s ease-in-out 0s 5 forwards,
+                type-h1 .8s steps(9) 1.5s forwards;
 		white-space: nowrap;
 		overflow: hidden;
     margin: 0 auto;
@@ -55,7 +55,7 @@
 		border-right: .1em solid transparent;
 		font-weight: 400;
 		font-size: 1.25em;
-    animation:  blinking-caret .562s ease-in-out 3.3s 7 forwards,
+    animation:  blinking-caret .562s ease-in-out 2.8s 7 forwards,
                 type-h2 1.33s steps(18) 4s forwards;
 		white-space: nowrap;
 		overflow: hidden;
@@ -95,11 +95,11 @@
 }
 
 @keyframes blinking-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: var(--gold-800);
-    }
-  }
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: var(--gold-800);
+	}
+}

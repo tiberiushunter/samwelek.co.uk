@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Privacy
-description: Last updated 04 Oct 2020
+title: Privacy & Cookies
+description: Last updated 05 Oct 2020
 ---
 
 ## Introduction
