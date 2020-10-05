@@ -39,6 +39,13 @@ sass:
 author:
   name: Sam Welek
   url: https://samwelek.co.uk
+  
+social:
+  name: Sam Welek
+  links:
+    - https://github.com/tiberiushunter
+    - https://linkedin.com/in/sam-welek
+    - https://twitter.com/samwelek
 
 # Custom vars
 version: 3.0.0
