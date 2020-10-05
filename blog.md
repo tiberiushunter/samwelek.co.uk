@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-subtitle: Browse all my blog posts and guides
+description: Browse all my blog posts and guides
 ---
 
 {% assign posts = site.posts | where:"type", "blog" %}

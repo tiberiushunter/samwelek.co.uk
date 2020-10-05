@@ -2,6 +2,11 @@
 //
 // Headings, body text, lists, and other misc typographic elements.
 
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/font/SourceCodePro-Regular.ttf") format("truetype");
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 600;
@@ -15,19 +20,19 @@ h1 {
 
 h2 {
   margin-top: 1.25rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border-color);
 }
 
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
 }
 
 p {

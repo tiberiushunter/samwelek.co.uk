@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-subtitle: So this looks like this...
+description: So this looks like this...
 tags: ["hello world", "jekyll"]
 ---
 

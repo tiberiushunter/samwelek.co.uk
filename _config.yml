@@ -1,9 +1,10 @@
 # Setup
 title: Sam Welek
-tagline: My personal portfolio and blog showcasing my latest projects and guides
+tagline: A Showcase of my Projects, Guides, & Blog Posts
 url: https://samwelek.co.uk
 baseurl: ""
 permalink: pretty
+lang: en_GB
 
 defaults:
   - scope:

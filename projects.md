@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Browse all my current and past projects
+description: Browse all my current and past projects
 ---
 
 {% assign posts = site.posts | where:"type", "projects" %}

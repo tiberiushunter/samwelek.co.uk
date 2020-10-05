@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy
-subtitle: Last updated 04 Oct 2020
+description: Last updated 04 Oct 2020
 ---
 
 ## Introduction

@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+description: The Personal Website of Sam Welek - A UK based Software Developer; This site is a showcase of all my projects, guides, and blog posts. Come take a look!
 ---
 
 <div class="home-section-content">

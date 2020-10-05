@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tags
-subtitle: Browse blogs and projects with tags
+description: Browse blogs and projects with tags
 ---
 
 <!-- Acknowledgement: https://www.assertnotmagic.com/2017/04/25/jekyll-tags-the-easy-way/ -->
