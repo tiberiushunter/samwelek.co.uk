@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Home
 ---
 
 <div class="home-section-content">
