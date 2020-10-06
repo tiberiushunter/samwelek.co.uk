@@ -21,6 +21,7 @@ layout: default
     </aside>
     {% endif %}
   </div>
+  {% if page.cover %}
   <div class="post-cover">
     <figure class="cover-caption">
       <img src="/assets/images{{ page.url }}{{ page.cover }}" alt="Cover Photo" />
@@ -29,6 +30,7 @@ layout: default
       </figcaption>
     </figure>
   </div>
+  {% endif %}
   {{ content }}
 </article>
 
