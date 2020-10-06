@@ -7,8 +7,6 @@
 	margin-top: 55vh;
 }
 
-
-
 @media screen and (min-width: 1081px) {
 	.profile-img {
 		width: 10vw;
@@ -56,7 +54,7 @@
 		font-weight: 400;
 		font-size: 1.25em;
     animation:  blinking-caret .562s ease-in-out 2.8s 7 forwards,
-                type-h2 1.33s steps(18) 4s forwards;
+                type-h2 1.33s steps(18) 3.5s forwards;
 		white-space: nowrap;
 		overflow: hidden;
 		margin: 0 auto;

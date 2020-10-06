@@ -7,7 +7,7 @@ tags: ["hello world", "jekyll"]
 
 <div class="post-cover">
 <img src="/assets/images{{ page.url }}cover.jpg" />
-<span class="cover-caption">Photo by <a href="https://unsplash.com/@lemonvlad?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vladislav Klapin</a> on <a href="https://unsplash.com/s/photos/hello?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<figure class="cover-caption">Photo by <a href="https://unsplash.com/@lemonvlad?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vladislav Klapin</a> on <a href="https://unsplash.com/s/photos/hello?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figure>
 </div>
 
 ## Hello World! :wave:
