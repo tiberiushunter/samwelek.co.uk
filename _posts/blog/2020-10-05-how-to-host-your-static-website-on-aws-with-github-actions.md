@@ -3,14 +3,9 @@ layout: post
 title: How to Host your Static Website on AWS with GitHub Actions
 description: Build a full CI/CD Pipeline with Github Actions to Deploy your Static Website to AWS
 tags: ["aws", "jekyll", "github", "guides"]
-image: cover.jpg
+cover: cover.jpg
+cover-credit: <span>Photo By <a href="https://unsplash.com/@lemonvlad?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vladislav Klapin</a> on <a href="https://unsplash.com/s/photos/hello?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
-
-
-<div class="post-cover">
-<img src="/assets/images{{ page.url }}cover.jpg" />
-<figure class="cover-caption">Photo by <a href="https://unsplash.com/@jdiegoph?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Diego PH</a> on <a href="https://unsplash.com/s/photos/cloud?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figure>
-</div>
 
 ## Introduction
 

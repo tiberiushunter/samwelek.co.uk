@@ -3,13 +3,9 @@ layout: post
 title: Hello World!
 description: So this looks like this...
 tags: ["hello world", "jekyll"]
-image: cover.jpg
+cover: cover.jpg
+cover-credit: <span>Photo by <a href="https://unsplash.com/@lemonvlad?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vladislav Klapin</a> on <a href="https://unsplash.com/s/photos/hello?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
-
-<div class="post-cover">
-<img src="/assets/images{{ page.url }}cover.jpg" />
-<figure class="cover-caption">Photo by <a href="https://unsplash.com/@lemonvlad?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vladislav Klapin</a> on <a href="https://unsplash.com/s/photos/hello?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figure>
-</div>
 
 ## Hello World! :wave:
 

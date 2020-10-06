@@ -6,7 +6,6 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <h2 class="lead">{{ page.description }}</h2>
   <div class="post-date-tag-container">
-
     <aside class="post-date">
       <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date"><small><span>Posted on</span>
           {{ page.date | date_to_string }}</small></time>
@@ -21,6 +20,14 @@ layout: default
       </small>
     </aside>
     {% endif %}
+  </div>
+  <div class="post-cover">
+    <figure class="cover-caption">
+      <img src="/assets/images{{ page.url }}{{ page.cover }}" alt="Cover Photo" />
+      <figcaption>
+        {{ page.cover-credit }}
+      </figcaption>
+    </figure>
   </div>
   {{ content }}
 </article>
