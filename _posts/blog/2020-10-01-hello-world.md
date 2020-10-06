@@ -3,6 +3,7 @@ layout: post
 title: Hello World!
 description: So this looks like this...
 tags: ["hello world", "jekyll"]
+image: cover.jpg
 ---
 
 <div class="post-cover">

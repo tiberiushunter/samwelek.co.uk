@@ -1,0 +1,17 @@
+<!-- Start - Twitter Sharing Cards -->
+<meta name="twitter:site" content="@{{ site.author.twitter }}">
+<meta name="twitter:title" content="{{ page.title }}">
+
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}/assets/images{{ page.url }}{{ page.image }}">
+{% else %}
+<meta name="twitter:card" content="summary">
+{% endif %}
+<!-- End - Twitter Sharing Cards -->
