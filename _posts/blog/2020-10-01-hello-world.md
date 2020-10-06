@@ -14,9 +14,9 @@ tags: ["hello world", "jekyll"]
 
 It took 15 commits and 5 days to realise that having a personal site built purely with <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and <abbr title="JavaScript">JS</abbr> was going to be a <del>nightmare</del> challenge in the long run. Realistically I just want to show off some projects, produce some guides on what I find difficult to get answers for, and the occasional post here and there - what I don't really want to be doing is handcrafting every single little button with loving care and attention for hours on end when I could be focusing on what's important.  
 
-## Jekyll to the Rescue!
+## Jekyll & Liquid to the Rescue!
 
-I've never used [Jekyll][1] before but from the docs and a few projects I've seen it looks like a very suitable static site generator with a large supporting community behind it. The idea of just writing all the posts in [Markdown][2] and having it all just work *like magic* :tada: is very appealing!  
+I've never used [Jekyll][1] before but from the docs and a few projects I've seen it looks like a very suitable static site generator with a large supporting community behind it. The idea of just writing all my posts in [Markdown][2] as well as using the [Liquid][8] template engine and having it all just work *like magic* :tada: is very appealing!  
 
 ## Dark Poole
 
@@ -37,3 +37,4 @@ The theme itself has made it a lot easier to quickly generate the Jekyll site st
 [5]: https://github.com/andrewhwanpark/dark-poole
 [6]: https://github.com/andrewhwanpark
 [7]: https://www.assertnotmagic.com/2017/04/25/jekyll-tags-the-easy-way/
+[8]: https://shopify.github.io/liquid/

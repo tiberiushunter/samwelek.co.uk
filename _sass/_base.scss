@@ -44,6 +44,9 @@ table {
   width: 100%;
   border: 0 solid var(--table-color);
   border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 td,
