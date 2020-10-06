@@ -107,7 +107,7 @@ Click on `Create bucket` and add the name of your website as the bucket's name a
 
 If you **are** going to be using a CloudFront Distribution then you can leave the default options set for this bucket and just click `Next` on the setup pages until you finish creating the bucket. 
 
-If you **are not** going to be using CloudFront Distribution, then on `Step 3: Set permissions` un-check the top checkbox labelled `Block all `*`public`*` access`.
+If you **are not** going to be using a CloudFront Distribution, then on `Step 3: Set permissions` un-check the top checkbox labelled `Block all `*`public`*` access`.
 
 #### Setting your S3 Bucket up for Static Website Hosting
 
@@ -127,7 +127,7 @@ Now we're going to set up a CloudFront Distribution that will allow you to use H
 
 Navigate to the CloudFront Dashboard by going back to the AWS Management Console and finding the CloudFront option or by searching for `CloudFront` on the search bar just as we did in the previous sections.
 
-Next click on `Create Distribution` and on the following screen click `Get Started` below the Web option.
+Next, click on `Create Distribution` and on the following screen click `Get Started` below the Web option.
 
 ![AWS CloudFront Part 1](/assets/images{{ page.url }}AWS8.png)
 
@@ -135,7 +135,7 @@ After this, begin by clicking the `Origin Domain Name` box under `Origin Setting
 
 ![AWS CloudFront Part 2](/assets/images{{ page.url }}AWS9.png)
 
-Next select `Yes` for `Restrict Bucket Access`.
+Next, select `Yes` for `Restrict Bucket Access`.
 
 Under the `Default Cache Behavior Settings` section select `Redirect HTTP to HTTPS`.
 
@@ -212,7 +212,7 @@ Secret Name | Secret Value |
 
 *Note: If you're not using CloudFront then you can omit the* `CLOUDFRONT_DIST_ID`.
 
-To add these secrets you'll need to navigate to the Secrets page for your GitHub repository which can be found under the Settings tab as shown below:
+To add these secrets you'll need to navigate to the `Secrets` page for your GitHub repository which can be found under the `Settings` tab as shown below:
 
 ![GitHub Secrets](/assets/images{{ page.url }}GitHub1.png)
 
@@ -258,6 +258,10 @@ jobs:
       run: aws cloudfront create-invalidation --distribution-id ${{ "{{ secrets.CLOUDFRONT_DIST_ID " }}}} --path "/*"
 
 ```
+
+Take note of the comments in the code, depending on your exact setup you may need to remove steps or modify the `Deploy to S3 bucket` step so it pulls your website from the directory it sits in e.g. `site/` or `dist/` are some common examples where your built website may reside. 
+
+*If you're using pure HTML, CSS, and JS then put your website in a directory rather than keeping it all on the root level as otherwise you'll need to manually configure uploading each file rather than just listing a single directory to deploy.*
 
 Once you've done this, push this file along with the latest version of your website (if you've made any changes) to GitHub.
 
