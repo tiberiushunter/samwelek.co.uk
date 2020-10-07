@@ -1,0 +1,36 @@
+.btn {
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 85%;
+    text-decoration: none;
+    &:hover {
+        box-shadow:inset 0 0 0 500px rgba(0,0,0,0.25);
+    }
+}
+
+.btn.btn-sm {
+    padding: calc(var(--spacer) * 0.5);
+    margin: calc(var(--spacer) * 0.5);
+
+}
+.btn.btn-md {
+    padding: calc(var(--spacer) * 0.75);
+    margin: calc(var(--spacer) * 0.5);
+
+}
+.btn.btn-lg {
+    padding: var(--spacer);
+    margin: calc(var(--spacer) * 0.75);
+}
+
+.btn.btn-primary {
+    background-color: var(--green);
+}
+.btn.btn-info {
+    background-color: var(--cyan);
+}
+
+.btn.btn-danger {
+    background-color: var(--red);
+}
+
