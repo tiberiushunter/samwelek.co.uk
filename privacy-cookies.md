@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy & Cookie Policy
-description: Last updated 07 Oct 2020
+description: Last updated 09 Oct 2020
 ---
 
 ## Introduction
@@ -95,7 +95,7 @@ The only data that can be viewed by us is from the CloudFront Console Reports wh
   * Contains data pertaining to the referring URL that the user came from (i.e. if a user clicked our link on a Facebook post, it would state the referral came from Facebook).
 * [CloudFront Usage Report](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/usage-charts.html)
   * Data stored for the last 60 Days
-  * Contains data pertaining to the amount of data is transmitted from CloudFront to users.
+  * Contains data pertaining to the amount of data that is transmitted from CloudFront to users.
 * [CloudFront Viewers Report](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/viewers-reports.html)
   * Data stored for the last 60 Days
   * Contains data pertaining to the following areas:
