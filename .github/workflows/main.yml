@@ -29,7 +29,7 @@ jobs:
       - name: Download built site artifact
         uses: actions/download-artifact@v2
         with:
-          name: _site
+          name: built-jekyll-files
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
