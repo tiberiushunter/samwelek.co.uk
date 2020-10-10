@@ -10,11 +10,14 @@ jobs:
       - name: Install Babel and Jest Modules
         run: npm install
 
-      - name: Run Jest Tests
+      - name: Build Jekyll Files
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && chmod 777 ./bin/test && ./bin/test"
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --trace"
+
+      - name: Run Jest Tests
+        run: npm run test:ci
 
   production-build:
     name: Production Build
