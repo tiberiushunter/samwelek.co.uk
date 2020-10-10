@@ -9,7 +9,7 @@
   "main": "index.html",
   "scripts": {
     "test": "cross-env bin/test",
-    "test:ci": "bin/test"
+    "test:ci": "bin/test-ci"
   },
   "author": "Sam Welek",
   "license": "MIT",

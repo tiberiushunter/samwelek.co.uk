@@ -1,0 +1,8 @@
+#!/bin/bash
+# usage: bin/test-ci
+#
+# Run tests
+
+jekyll build --config _config.yml,_config.test.yml --future --trace
+
+./node_modules/.bin/jest $@
