@@ -13,12 +13,24 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --trace"
 
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: built-jekyll-files
+          path: _site
+          retention-days: 1
+
   deploy:
     name: Deployment
     runs-on: ubuntu-latest
     needs: [build]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
+      - name: Download built site artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: _site
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
