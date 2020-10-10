@@ -1,6 +1,0 @@
-#!/bin/bash
-# usage: bin/test-ci
-#
-# Run tests
-
-./node_modules/.bin/jest $@

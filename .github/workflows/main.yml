@@ -16,9 +16,9 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll/src && jekyll build --config _config.yml,_config.test.yml --future --trace"
 
-      - name: Make Testing file Executable
-        run: chmod +x ./bin/test-ci
-        
+      - name: Make Testing File Executable
+        run: chmod +x ./bin/test
+
       - name: Run Jest Tests
         run: npm run test:ci
 
@@ -34,7 +34,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --trace"
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll/src && jekyll build --config _config.yml --future --trace"
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v2

@@ -8,7 +8,8 @@
   },
   "main": "index.html",
   "scripts": {
-    "test": "cross-env bin/test",
+    "build": "cross-env bin/build-prod",
+    "test": "cross-env bin/build-test && cross-env bin/test",
     "test:ci": "bin/test-ci"
   },
   "author": "Sam Welek",
