@@ -31,7 +31,7 @@ The theme itself has made it a lot easier to quickly generate the Jekyll site st
 [2]: https://daringfireball.net/projects/markdown/
 [3]: https://samwelek.co.uk/blog/
 [4]: https://samwelek.co.uk/projects/
-[5]: https://github.com/andrewhwanpark/dark-poole
+[5]: https://github.com/andrewhwanpark/dark-poole/
 [6]: https://github.com/andrewhwanpark
 [7]: https://www.assertnotmagic.com/2017/04/25/jekyll-tags-the-easy-way/
 [8]: https://shopify.github.io/liquid/
