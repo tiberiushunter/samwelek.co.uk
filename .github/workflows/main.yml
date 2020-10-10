@@ -14,7 +14,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "npm run test:ci"
+          jekyll/builder:latest /bin/bash -c "./bin/test"
 
   production-build:
     name: Production Build
