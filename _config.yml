@@ -4,6 +4,26 @@ url: https://samwelek.co.uk
 baseurl: ""
 permalink: pretty
 lang: en_GB
+twitter_username: samwelek
+github_username: tiberiushunter
+
+source: src
+
+# Optimize Jekyll
+exclude:
+  - .git
+  - .vscode
+  - .jekyll-cache
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
+# Gems
+plugins:
+  - jekyll-seo-tag
+  - jemoji
 
 defaults:
   - scope:
@@ -14,21 +34,6 @@ defaults:
       path: "_posts/projects"
     values:
       type: "projects"
-
-# Gems
-plugins:
-  - jekyll-seo-tag
-  - jemoji
-
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
 
 sass:
   sass_dir: _sass
@@ -41,7 +46,7 @@ author:
   name: Sam Welek
   url: https://samwelek.co.uk
   twitter: samwelek
-  
+
 social:
   name: Sam Welek
   links:

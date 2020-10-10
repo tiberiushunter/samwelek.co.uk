@@ -1,9 +1,32 @@
 name: CI
 on: [push]
 jobs:
-  build:
-    name: Build
+  test-build:
+    name: Test Build
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Babel and Jest Modules
+        run: npm install
+
+      - name: Build Jekyll Files
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll/src && jekyll build --config _config.yml,_config.test.yml --future --trace"
+
+      - name: Make Testing File Executable
+        run: chmod +x ./bin/test
+
+      - name: Run Jest Tests
+        run: npm run test:ci
+
+  production-build:
+    name: Production Build
+    runs-on: ubuntu-latest
+    needs: [test-build]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
 
@@ -11,7 +34,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --trace"
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll/src && jekyll build --config _config.yml --future --trace"
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v2
@@ -23,7 +46,7 @@ jobs:
   deploy:
     name: Deployment
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [production-build]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Download built site artifact
