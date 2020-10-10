@@ -1,0 +1,17 @@
+---
+---
+{
+  "posts": [
+    {% for post in site.posts %}{
+      "layout": "{{ post.layout }}",
+      "title": "{{ post.title | smartify }}",
+      "description": "{{ post.description | smartify }}",
+      "tags": "{{ post.tags | smartify }}",
+      "url": "{{ post.url }}",
+      "path": "{{ post.path }}",
+      "cover": "{{ post.cover }} ",
+      "cover_credit": "{{ post.cover-credit | strip_html | smartify }}",
+      "content": {{ post.content | strip_html | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}

@@ -1,0 +1,8 @@
+#!/bin/bash
+# usage: bin/test
+#
+# Run tests
+
+bundle exec jekyll build --config _config.yml,_config.test.yml
+
+./node_modules/.bin/jest $@
