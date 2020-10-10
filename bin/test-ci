@@ -3,6 +3,4 @@
 #
 # Run tests
 
-jekyll build --config _config.yml,_config.test.yml --future --trace
-
 ./node_modules/.bin/jest $@

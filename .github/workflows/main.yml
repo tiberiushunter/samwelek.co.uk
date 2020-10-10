@@ -14,7 +14,10 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll/src && npm run test:ci"
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll/src && jekyll build --config _config.yml,_config.test.yml --future --trace"
+
+      - name: Run Jest Tests
+        run: npm run test:ci
 
   production-build:
     name: Production Build
