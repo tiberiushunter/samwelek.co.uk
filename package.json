@@ -10,7 +10,7 @@
   "scripts": {
     "build": "cross-env bin/build-prod",
     "test": "cross-env bin/build-test && cross-env bin/test",
-    "test:ci": "bin/test-ci"
+    "test:ci": "bin/test"
   },
   "author": "Sam Welek",
   "license": "MIT",
