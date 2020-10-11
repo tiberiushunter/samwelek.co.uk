@@ -11,7 +11,7 @@ cover-credit: <span>Photo By <a href="https://unsplash.com/@lemonvlad?utm_source
 
 This post will guide you through the entire setup process of building a static website, pushing it to a GitHub repository, and using GitHub Actions to deploy your website to Amazon Web Services (AWS) to both serve and distribute your website across the world. :earth_africa:
 
->:grey_question:  <b>What is a Static Website?</b>
+>:grey_question:  **What is a Static Website?**
 >
 > A Static Website is a website that does not rely on a server to deliver dynamic information, all the data on the web page is delivered exactly as it is stored, examples of this type of website can include blogs, documentation, and guides.
 
@@ -22,8 +22,8 @@ This post will guide you through the entire setup process of building a static w
 
 ### Prerequisites
 
-* An account on [GitHub](https://github.com) to store the repository of your website
-* An account on [AWS](https://aws.amazon.com) for hosting your website
+- An account on [GitHub](https://github.com) to store the repository of your website
+- An account on [AWS](https://aws.amazon.com) for hosting your website
 
 *Optional: A domain name for your website to sit on, as a prerequisite this will also be registered already with Route53 or already transferred to Route53. If you don't have/want one you'll need to rely on AWS's CloudFront URLs e.g.* `d1234abcd.cloudfront.net` *if you want HTTPS with SSL certificates or the S3 bucket's URL e.g.* `my-bucket.s3.eu-west-2.amazonaws.com` *if you're happy with plain old HTTP.*
 
@@ -31,10 +31,10 @@ This post will guide you through the entire setup process of building a static w
 
 So before we dive in, I've summarised some of the services we're going to be using today, further on in this guide I'll be describing what each service does for us as we go. :+1:
 
-* GitHub Actions - To deploy the website to AWS
-* AWS Simple Storage Service (S3) - To store your static website
-* AWS CloudFront - To serve and distribute your static website
-* AWS Route53 - To create DNS records to point to your static website
+- GitHub Actions - To deploy the website to AWS
+- AWS Simple Storage Service (S3) - To store your static website
+- AWS CloudFront - To serve and distribute your static website
+- AWS Route53 - To create DNS records to point to your static website
 
 ### Building your Website
 
@@ -52,7 +52,7 @@ Once you've got your repository set up and have pushed your website to GitHub we
 
 ### Creating an AWS IAM User for GitHub
 
-Once you've created an account with AWS, and you've signed in, you'll be presented with the AWS Management Console. 
+Once you've created an account with AWS, and you've signed in, you'll be presented with the AWS Management Console.
 
 From here you'll need to navigate to the Identity and Access Management (IAM) Dashboard, which can be found either by locating it on the page or by searching for `IAM` in the search bar as seen below:
 
@@ -62,7 +62,7 @@ The Identity and Access Management Dashboard is where you can manage all of the 
 
 #### Creating your IAM User
 
-Firstly, you're going to click on `Users` from the left-hand menu and you'll be presented with the screen below. 
+Firstly, you're going to click on `Users` from the left-hand menu and you'll be presented with the screen below.
 
 ![IAM Dashboard](/assets/images{{ page.url }}AWS2.png)
 
@@ -85,7 +85,7 @@ Permission Name | Purpose |
 
 The next step allows you to add tags to the user to make it easy to identify the user later on, I've chosen to skip this step in the example but you're welcome to add any tags you want to.
 
-Finally you'll be presented with a screen similar to the one below allowing you to review the user before it gets created, if everything looks okay click `Create user`. 
+Finally you'll be presented with a screen similar to the one below allowing you to review the user before it gets created, if everything looks okay click `Create user`.
 
 ![IAM Review Create User](/assets/images{{ page.url }}AWS5.png)
 
@@ -101,9 +101,9 @@ Click on `Create bucket` and add the name of your website as the bucket's name a
 
 ![AWS Create S3 Bucket](/assets/images{{ page.url }}AWS6.png)
 
-If you **are** going to be using a CloudFront Distribution then you can leave the default options set for this bucket and just click `Next` on the setup pages until you finish creating the bucket. 
+If you **are** going to be using a CloudFront Distribution then you can leave the default options set for this bucket and just click `Next` on the setup pages until you finish creating the bucket.
 
-If you **are not** going to be using a CloudFront Distribution, then on `Step 3: Set permissions` un-check the top checkbox labelled `Block all `*`public`*` access`.
+If you **are not** going to be using a CloudFront Distribution, then on `Step 3: Set permissions` un-check the top checkbox labelled `Block all public access`.
 
 #### Setting your S3 Bucket up for Static Website Hosting
 
@@ -117,9 +117,9 @@ Take note of your bucket name and URL, we'll be using it later on. Finally click
 
 ### Creating a CloudFront Distribution
 
-Now we're going to set up a CloudFront Distribution that will allow you to use HTTPS with an SSL certificate. 
+Now we're going to set up a CloudFront Distribution that will allow you to use HTTPS with an SSL certificate.
 
-*Note: If you're happy to serve your website with HTTP then you can skip this step and jump to [Using Route53 to Point to your Domain](#using-route53-to-point-to-your-domain)* and if you're happy to not use your own domain either you can jump straight to [Setting Up GitHub :rocket:](#setting-up-github) 
+*Note: If you're happy to serve your website with HTTP then you can skip this step and jump to [Using Route53 to Point to your Domain](#using-route53-to-point-to-your-domain)* and if you're happy to not use your own domain either you can jump straight to [Setting Up GitHub :rocket:](#setting-up-github)
 
 Navigate to the CloudFront Dashboard by going back to the AWS Management Console and finding the CloudFront option or by searching for `CloudFront` on the search bar just as we did in the previous sections.
 
@@ -157,7 +157,7 @@ From here you can enter your own domain name (or names if you want to cover mult
 
 ![AWS CloudFront Part 4](/assets/images{{ page.url }}AWS12.png)
 
-I prefer to use DNS validation as AWS can validate your name for you automatically by creating CNAME records, if you ever want to revoke the certificate you can simply delete these records from within Route53. 
+I prefer to use DNS validation as AWS can validate your name for you automatically by creating CNAME records, if you ever want to revoke the certificate you can simply delete these records from within Route53.
 
 Once you complete this you can return to the previous screen and, just as we did with selecting the bucket name, clicking on the `Custom SSL Certificate` box will reveal a popup dropdown where you can select your newly created certificate.
 
@@ -169,7 +169,7 @@ Finally, once you've created the S3 bucket and/or CloudFront Distribution you ca
 
 Navigate to the Route53 Management Console by going back to the AWS Management Console and finding the Route53 option or by searching for `Route53` on the search bar just as we did in the previous sections.
 
-Next click on `Hosted Zones` from the left-hand menu and click on the entry that matches the domain name you want to host your website on. 
+Next click on `Hosted Zones` from the left-hand menu and click on the entry that matches the domain name you want to host your website on.
 
 From there, click on `Create Record` and then click the `Simple Routing` option as seen below:
 
@@ -197,7 +197,7 @@ When you're done, click `Define simple record` - Now let's set up [GitHub :rocke
 
 ### Adding Secrets to your GitHub Repository
 
-Now we've got your IAM user, CloudFront Distribution and S3 Bucket all set up we can add the following details to your GitHub repository. 
+Now we've got your IAM user, CloudFront Distribution and S3 Bucket all set up we can add the following details to your GitHub repository.
 
 Secret Name | Secret Value |
 ---|---|
@@ -228,7 +228,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    
+
     # Remove this step if you're not using Jekyll or modify it
     # if you're building your files with a different system
     - name: Build Jekyll Files
@@ -244,7 +244,7 @@ jobs:
         aws-secret-access-key: ${{ "{{ secrets.AWS_SECRET_ACCESS_KEY " }}}}
         aws-region: eu-west-2 # Change this to the location of your S3 Bucket
 
-    # Change ./_site/ to the location of your website in your repository, 
+    # Change ./_site/ to the location of your website in your repository,
     # with Jekyll _site/ is the default location of the built files
     - name: Deploy to S3 bucket
       run: aws s3 sync ./_site/ ${{ "{{ secrets.S3_BUCKET " }}}} --delete
@@ -255,7 +255,7 @@ jobs:
 
 ```
 
-Take note of the comments in the code, depending on your exact setup you may need to remove steps or modify the `Deploy to S3 bucket` step so it pulls your website from the directory it sits in e.g. `site/` or `dist/` are some common examples where your built website may reside. 
+Take note of the comments in the code, depending on your exact setup you may need to remove steps or modify the `Deploy to S3 bucket` step so it pulls your website from the directory it sits in e.g. `site/` or `dist/` are some common examples where your built website may reside.
 
 *If you're using pure HTML, CSS, and JS then put your website in a directory rather than keeping it all on the root level as otherwise you'll need to manually configure uploading each file rather than just listing a single directory to deploy.*
 
@@ -265,6 +265,6 @@ If you navigate to the `Actions` tab on your repository you should be able to se
 
 ![GitHub Actions](/assets/images{{ page.url }}GitHub2.png)
 
-If that is the case then your website has been fully deployed by GitHub and is live on AWS! :sunglasses: 
+If that is the case then your website has been fully deployed by GitHub and is live on AWS! :sunglasses:
 
 Congratulations :tada: Go to your website URL to see the results! :heart:
