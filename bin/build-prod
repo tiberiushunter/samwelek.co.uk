@@ -1,6 +1,0 @@
-#!/bin/bash
-# usage: bin/build
-#
-# Builds the Jekyll site locally
-
-bundle exec jekyll build --config _config.yml --future --trace

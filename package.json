@@ -8,9 +8,9 @@
   },
   "main": "index.html",
   "scripts": {
-    "build": "cross-env bin/build-prod",
-    "test": "cross-env bin/build-test && cross-env bin/test",
-    "test:ci": "bin/test"
+    "build": "bundle exec jekyll build --config _config.yml --future --trace",
+    "test": "bundle exec jekyll build --config _config.yml,_config.test.yml --future --trace && jest",
+    "test:ci": "jest"
   },
   "author": "Sam Welek",
   "license": "MIT",
