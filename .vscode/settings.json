@@ -1,5 +1,31 @@
 {
-    "files.associations": {
-        "*.yaml": "home-assistant"
-    }
+    "cSpell.words": [
+        "CNAME",
+        "CNAMEs",
+        "Cookiepedia",
+        "Grinwis",
+        "Hassio",
+        "Klapin",
+        "Palo",
+        "Vladislav",
+        "Welek",
+        "anonymise",
+        "cfduid",
+        "chmod",
+        "endfor",
+        "forloop",
+        "myamazingsite",
+        "othneildrew's",
+        "rxaiver's",
+        "samwelek",
+        "summarised",
+        "tada",
+        "utma",
+        "utmb",
+        "utmc",
+        "utmt",
+        "utmz",
+        "xmlschema"
+    ]
+
 }

@@ -14,6 +14,5 @@ description: Browse all my current and past projects
 {% endfor %}
 </ul>
 
-
 <br />
 <span>...or browse projects by <a href="/tags/">tag</a></span>

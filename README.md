@@ -19,15 +19,17 @@
 
 <!-- ABOUT -->
 ## About
-A repository for my personal website, it's <del>purely made with HTML, CSS, and JS</del> been made with Jekyll as it's a static site with some links and information thrown together - it's hosted on AWS in a S3 bucket served by CloudFront.
+
+A repository for my personal website, it's ~~purely made with HTML, CSS, and JS~~ been made with [Jekyll][jekyll] and [Liquid][liquid] as it's a static site with some links and information thrown together - it's all hosted on AWS in a S3 bucket served by CloudFront.
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-I don't list this project as open source as it's solely a portfolio of my own work but feel free to reach out and contact me if you think there are bugs or issues! :heart:
+As this repository is a portfolio of my own work I might be *slightly* hesitant for adding contributions by others but feel free to reach out or raise an issue if you find a bug :heart:
 
 <!-- LICENSE -->
 ## License
+
 Distributed under the MIT License. See [LICENSE][license-url] for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -44,7 +46,7 @@ Distributed under the MIT License. See [LICENSE][license-url] for more informati
 
 Owner: Sam Welek
 
-[![GitHub][github-shield]][github-url] 
+[![GitHub][github-shield]][github-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Twitter][twitter-shield]][twitter-url]
 
@@ -55,6 +57,8 @@ Project Link: [https://github.com/tiberiushunter/samwelek.co.uk][project-url]
 
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/samwelek.co.uk
+[jekyll]: https://jekyllrb.com/
+[liquid]: https://shopify.github.io/liquid/
 
 [aws-shield]: https://img.shields.io/website?down_message=offline&label=status&logo=amazon-aws&style=for-the-badge&up_message=online&url=https%3A%2F%2Fsamwelek.co.uk
 

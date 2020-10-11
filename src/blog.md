@@ -17,6 +17,5 @@ description: Browse all my blog posts and guides
     {% endfor %}
 </div>
 
-
 <br />
 <span>...or browse blog posts by <a href="/tags/">tag</a></span>
