@@ -60,7 +60,7 @@ Project Link: [https://github.com/tiberiushunter/samwelek.co.uk][project-url]
 [jekyll]: https://jekyllrb.com/
 [liquid]: https://shopify.github.io/liquid/
 
-[aws-shield]: https://img.shields.io/website?down_message=offline&label=status&logo=amazon-aws&style=for-the-badge&up_message=online&url=https%3A%2F%2Fsamwelek.co.uk
+[aws-shield]: https://img.shields.io/website?down_message=offline&label=status&logo=jekyll&style=for-the-badge&up_message=online&url=https%3A%2F%2Fsamwelek.co.uk
 
 [url]: https://samwelek.co.uk
 
