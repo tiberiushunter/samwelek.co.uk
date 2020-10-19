@@ -1,0 +1,39 @@
+// Footer
+
+footer {
+  margin-top: var(--spacer-3);
+  margin-bottom: var(--spacer-3);
+  padding-top: var(--spacer-2);
+	border-top: 1px solid var(--border-color);
+	font-size: 85%;
+
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+footer .coffeeBadge{
+	float: right;
+}
+
+footer .copyright{
+	margin-top: var(--spacer);
+}
+
+/*Desktop Query*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Mobile Query*/
+@media only screen and (max-width: 480px) {
+  footer .coffeeBadge{
+		display: none
+	}
+}
+
+/*Tablet Query*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+
+}

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Home
 description: The Personal Website of Sam Welek, A UK based Software Developer. Here I showcase all my latest projects, guides, and blog posts. Come take a look!
 ---
