@@ -2,7 +2,9 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-.content-container {
+.page-container{
+  position: relative;
+  min-height: 100vh; 
   max-width: 50rem;
   padding-left: var(--spacer-2);
   padding-right: var(--spacer-2);
@@ -10,25 +12,21 @@
   margin-right: auto;
 }
 
+.content-container {
+  padding-bottom: 10rem;    /* Footer height */
+}
+
 
 .shield {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-top:1rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--border-color);
   img {
     margin-bottom: 0;
   }
 }
-
-footer {
-  margin-top: var(--spacer-3);
-  margin-bottom: var(--spacer-3);
-  padding-top: var(--spacer-2);
-  border-top: 1px solid var(--border-color);
-}
-
 
 .post-card-container {
   display: flex;
@@ -51,26 +49,19 @@ footer {
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-  .home-footer {
-    margin-top: calc(var(--spacer-3)*2);
-  }
-
   .shield {
     margin-left: var(--spacer-3);
     margin-right: var(--spacer-3);
     img {
-      margin-left: 1rem;
-      margin-right: 1rem;    
+      margin-left: var(--spacer-2);
+      margin-right: var(--spacer-2);   
+      width: 75%;
     }
   }
 }
 
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
-  .home-footer {
-    margin-top: calc(var(--spacer-2)*1);
-  }
-
   .shield {
     margin-left:0;
     margin-right:0; 
@@ -86,10 +77,6 @@ footer {
 
 /*Tablet Query*/
 @media only screen and (min-width: 481px) and (max-width:768px) {
-  .home-footer {
-    margin-top: calc(var(--spacer-2));
-  }
-
   .shield {
     margin-left:var(--spacer);
     margin-right:var(--spacer);

@@ -26,6 +26,9 @@
         "utmt",
         "utmz",
         "xmlschema"
-    ]
+    ],
+    "files.associations": {
+        "*.yaml": "home-assistant"
+    }
 
 }
