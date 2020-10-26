@@ -10,7 +10,7 @@ description: Browse all my blog posts and guides
     {% for post in posts %}
     <div class="post-card">
      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-        <img src="/assets/images{{ post.url }}cover.jpg"/>
+        <img class="post-cover" src="/assets/images{{ post.url }}{{ post.cover }}"/>
        {{ post.title }}
        </a><br /><time datetime="{{ post.date | date_to_xmlschema }}" class="date">{{ post.date | date_to_string }}</time>
     </div>

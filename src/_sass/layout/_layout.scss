@@ -38,13 +38,16 @@
   padding:  var(--spacer-2);
   text-align: center;
   font-size: 110%;
+  .post-cover {
+    display: block;
+  }
   a {
     text-decoration: none;
   }  
   .date {
     font-size: 75%;
     font-style: italic;
-    }
+  }
 }
 
 /*Desktop Query*/
