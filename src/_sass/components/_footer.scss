@@ -10,7 +10,7 @@ footer {
 	position: absolute;
   bottom: 0;
   width: 95%;
-  height: 5rem;
+  height: 15vh;
 }
 
 footer .coffeeBadge{
@@ -23,7 +23,9 @@ footer .copyright{
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-
+ footer {
+   height: 10vh;
+ }
 }
 
 /*Mobile Query*/
