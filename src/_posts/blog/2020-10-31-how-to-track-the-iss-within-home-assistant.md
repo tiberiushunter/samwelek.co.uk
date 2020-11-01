@@ -11,6 +11,8 @@ cover-credit: <span>Photo by <a href="https://unsplash.com/@norbertkowalczyk?utm
 
 In this post I will be running through the process of tracking the International Space Station from within Home Assistant using a mixture of REST APIs, MQTT and the Map Card Lovelace component :satellite:
 
+There does already exist an [ISS integration](https://www.home-assistant.io/integrations/iss/) for Home Assistant however I don't believe it has been updated for a while, I might have a play with it in the future to update the APIs used to fetch the data especially for use with the Map. I've seen a few others struggling to get this to work as expected, when you add the `show_on_map` property it returns an error asking for an API key, therefore the solution below is to use pure REST APIs which can be easily modified in the future as well as adding the additional functionality of including further sensors to track specific data from the ISS.
+
 - toc
 {: toc }
 
