@@ -26,13 +26,14 @@ The below is taken from the `README.md` from the repository itself, view this fi
 
 [![Build Status][travis-ci-shield-main]][travis-ci-url]
 [![Build Status][travis-ci-shield-dev]][travis-ci-url]
-![Project Maintenance][maintenance-shield]
 [![MIT License][license-shield]][license-url]
+{: .shield.project-shield  }
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+{: .shield.project-shield  }
 
 <!-- ABOUT -->
 ## About
@@ -92,7 +93,8 @@ Owner: Sam Welek
 [![GitHub][github-shield]][github-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Twitter][twitter-shield]][twitter-url]
-
+{: .shield.project-shield  }
+<br />
 Project Link: [https://github.com/tiberiushunter/hassio-config][project-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->

@@ -35,12 +35,6 @@
   padding-top: var(--spacer-2);
   padding-bottom: var(--spacer-2);
 
-  .cover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .cover-caption > figcaption {
     margin-top: calc(var(--spacer)*-0.5);
     font-style: italic;
@@ -83,6 +77,10 @@
   a {
     text-decoration: none;
   }
+}
+
+.project-shield {
+  border-top: none;
 }
 
 // Related posts
