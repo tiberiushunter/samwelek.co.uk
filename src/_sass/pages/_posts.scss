@@ -61,7 +61,7 @@
 }
 
 .post-divider {
-  width: 15%;
+  width: 50%;
 }
 
 // Tags
@@ -87,7 +87,7 @@
 .related {
   border-top: 1px solid var(--border-color);
   margin-top: var(--spacer-2);
-  padding-bottom: 5rem;
+  padding-bottom: var(--spacer-2);
 }
 
 .related-posts {
@@ -111,7 +111,9 @@
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-
+  .post-divider {
+    width: 50%;
+  }
 }
 
 /*Mobile Query*/
@@ -124,6 +126,9 @@
   .post-date {
     max-width:100%
   }
+  .post-divider {
+    width: 50%;
+  }
 }
 
 /*Tablet Query*/
@@ -133,6 +138,9 @@
   }
   .post-date {
     max-width:100%
+  }
+  .post-divider {
+    width: 30%;
   }
 }
 
