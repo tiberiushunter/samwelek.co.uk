@@ -29,7 +29,7 @@ This post will guide you through the entire setup process of building a static w
 
 ### What Services are we going to be using?
 
-So before we dive in, I've summarised some of the services we're going to be using today, further on in this guide I'll be describing what each service does for us as we go. :+1:
+So, before we dive in, I've summarised some of the services we're going to be using today, further on in this guide I'll be describing what each service does for us as we go. :+1:
 
 - GitHub Actions - To deploy the website to AWS
 - AWS Simple Storage Service (S3) - To store your static website
@@ -46,7 +46,7 @@ Whichever static site generator (or not) you choose to use, the steps in this gu
 
 We're going to start by creating a repository and pushing your website to GitHub, if this is your first time using Git, GitHub, or any source control system in the past then you can learn more about them from [here](https://medium.com/@shiivangii/all-about-git-and-github-c4b987df1b16).
 
-Once you've got your repository set up and have pushed your website to GitHub we can jump over to AWS to start setting up the infrastructure to host your website. Let's make a start!
+Once you've got your repository set up and have pushed your website to GitHub, we can jump over to AWS to start setting up the infrastructure to host your website. Let's make a start!
 
 ## Setting up AWS
 
@@ -85,7 +85,7 @@ Permission Name | Purpose |
 
 The next step allows you to add tags to the user to make it easy to identify the user later on, I've chosen to skip this step in the example but you're welcome to add any tags you want to.
 
-Finally you'll be presented with a screen similar to the one below allowing you to review the user before it gets created, if everything looks okay click `Create user`.
+Finally, you'll be presented with a screen similar to the one below allowing you to review the user before it gets created, if everything looks okay click `Create user`.
 
 ![IAM Review Create User](/assets/images{{ page.url }}AWS5.png)
 
@@ -93,7 +93,7 @@ After you create the user you'll be presented with the user's `access_key` and `
 
 ### Creating an S3 Bucket
 
-Next we need an area to store your website that AWS will use to host your files from, for this we're going to be using Amazon's Simple Storage Service (S3).
+Next, we need an area to store your website that AWS will use to host your files from, for this we're going to be using Amazon's Simple Storage Service (S3).
 
 Navigate to the S3 Dashboard by going back to the AWS Management Console and finding the S3 option or by searching for `S3` on the search bar just as we did in the previous section.
 
@@ -175,7 +175,7 @@ From there, click on `Create Record` and then click the `Simple Routing` option 
 
 ![AWS Route53](/assets/images{{ page.url }}AWS13.png)
 
-Next we need to create an A record linking your website to your domain name:
+Next, we need to create an A record linking your website to your domain name:
 
 #### Hosting with S3
 
@@ -208,7 +208,7 @@ Secret Name | Secret Value |
 
 *Note: If you're not using CloudFront then you can omit the* `CLOUDFRONT_DIST_ID`.
 
-To add these secrets you'll need to navigate to the `Secrets` page for your GitHub repository which can be found under the `Settings` tab as shown below:
+To add these secrets, you'll need to navigate to the `Secrets` page for your GitHub repository which can be found under the `Settings` tab as shown below:
 
 ![GitHub Secrets](/assets/images{{ page.url }}GitHub1.png)
 

@@ -36,6 +36,9 @@ img {
   max-width: 100%;
   margin-bottom: var(--spacer);
   border-radius: var(--border-radius);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table {
