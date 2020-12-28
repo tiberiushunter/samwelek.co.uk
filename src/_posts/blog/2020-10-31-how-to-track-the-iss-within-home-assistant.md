@@ -306,12 +306,16 @@ In my example card above I've created a few additional sensors which can be used
 
 {% endraw %}
 
-If you wish to see the latest implementation for this on my own setup the check out my [Configuration][project-url] repository.
+If you wish to see the latest implementation for this on my own setup then check out my [Configuration][project-url] repository.
 
 Hopefully this guide has helped you create a few new cards for tracking the ISS (or any other satellite out there)! :sunglasses:
 
+<!-- Links -->
+
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/hassio-config/
+
+<!-- 3rd Party -->
 [hacs]: https://hacs.xyz/
 
 <!-- Home Assistant -->
@@ -323,3 +327,6 @@ Hopefully this guide has helped you create a few new cards for tracking the ISS 
 [ha-template]: https://www.home-assistant.io/integrations/template/
 [ha-mqtt-json]: https://www.home-assistant.io/integrations/mqtt_json/
 [ha-mqtt-topic]: https://www.home-assistant.io/docs/mqtt/service/
+
+<!-- Acronyms -->
+*[YAML]: YAML Ain't Markup Language

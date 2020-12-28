@@ -13,29 +13,37 @@ It took 15 commits and 5 days to realise that having a personal site built purel
 
 ## Jekyll & Liquid to the Rescue!
 
-I've never used [Jekyll][1] before but from the docs and a few projects I've seen it looks like a very suitable static site generator with a large supporting community behind it. The idea of just writing all my posts in [Markdown][2] as well as using the [Liquid][8] template engine and having it all just work *like magic* :tada: is very appealing!  
+I've never used [Jekyll][jekyll] before but from the docs and a few projects I've seen it looks like a very suitable static site generator with a large supporting community behind it. The idea of just writing all my posts in [Markdown][markdown] as well as using the [Liquid][liquid] template engine and having it all just work *like magic* :tada: is very appealing!  
 
 ## Dark Poole
 
-The home page for this site is just migrated over from the old version however the [blog][2] and [projects][4] links will be making full of use of Jekyll and the theme I've chosen currently is [Dark Poole][5] by [Andrew Park][6] as you've got to love a good dark theme!
+The home page for this site is just migrated over from the old version however the [blog][blog] and [projects][projects] links will be making full of use of Jekyll and the theme I've chosen currently is [Dark Poole][dark-poole] by [Andrew Park][andrew-park] as you've got to love a good dark theme!
 
 The theme itself has made it a lot easier to quickly generate the Jekyll site structure but I've made a few changes including:
 
 * Adding the subtitle as a variable
 * Adding a little more space between the header tags for some breathing room
 * Reducing the size of the posted date
-* Tag system (based from one made by [Ryan Palo][7])
+* Tag system (based from one made by [Ryan Palo][ryan-palo])
 * Plus a few more tweaks!
+  
+<!-- Links -->
 
-[1]: https://jekyllrb.com/
-[2]: https://daringfireball.net/projects/markdown/
-[3]: https://samwelek.co.uk/blog/
-[4]: https://samwelek.co.uk/projects/
-[5]: https://github.com/andrewhwanpark/dark-poole/
-[6]: https://github.com/andrewhwanpark
-[7]: https://www.assertnotmagic.com/2017/04/25/jekyll-tags-the-easy-way/
-[8]: https://shopify.github.io/liquid/
+<!-- Project Specific -->
+[blog]: https://samwelek.co.uk/blog/
+[projects]: https://samwelek.co.uk/projects/
 
+<!-- 3rd Party -->
+[jekyll]: https://jekyllrb.com/
+[markdown]: https://daringfireball.net/projects/markdown/
+[liquid]: https://shopify.github.io/liquid/
+
+<!-- References -->
+[dark-poole]: https://github.com/andrewhwanpark/dark-poole/
+[andrew-park]: https://github.com/andrewhwanpark
+[ryan-palo]: https://www.assertnotmagic.com/2017/04/25/jekyll-tags-the-easy-way/
+
+<!-- Acronyms -->
 *[HTML]: Hyper Text Markup Language
 *[CSS]: Cascading Style Sheets
 *[JS]: JavaScript
