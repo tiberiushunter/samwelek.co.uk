@@ -20,7 +20,8 @@
     "babel-jest": "^26.5.2",
     "fs-extra": "^9.0.1",
     "jest": "^26.5.2",
-    "jest-cli": "^26.5.2"
+    "jest-cli": "^26.5.2",
+    "node-notifier": ">=8.0.1"
   },
   "babel": {
     "presets": [
