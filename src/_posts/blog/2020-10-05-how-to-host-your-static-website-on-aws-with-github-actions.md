@@ -22,8 +22,8 @@ This post will guide you through the entire setup process of building a static w
 
 ### Prerequisites
 
-- An account on [GitHub](https://github.com) to store the repository of your website
-- An account on [AWS](https://aws.amazon.com) for hosting your website
+- An account on [GitHub][github] to store the repository of your website
+- An account on [AWS][aws] for hosting your website
 
 *Optional: A domain name for your website to sit on, as a prerequisite this will also be registered already with Route53 or already transferred to Route53. If you don't have/want one you'll need to rely on AWS's CloudFront URLs e.g.* `d1234abcd.cloudfront.net` *if you want HTTPS with SSL certificates or the S3 bucket's URL e.g.* `my-bucket.s3.eu-west-2.amazonaws.com` *if you're happy with plain old HTTP.*
 
@@ -38,13 +38,13 @@ So, before we dive in, I've summarised some of the services we're going to be us
 
 ### Building your Website
 
-It's all down to you on deciding how you'd like to generate your website, this website is generated using [Jekyll](https://jekyllrb.com/) and allows me to write content using Markdown however you could just as easily create your own website using pure HTML, CSS, and JS.
+It's all down to you on deciding how you'd like to generate your website, this website is generated using [Jekyll][jekyll] and allows me to write content using Markdown however you could just as easily create your own website using pure HTML, CSS, and JS.
 
 Whichever static site generator (or not) you choose to use, the steps in this guide should point you in the right direction and I'll specify sections which you can skip if you're going down the pure route. :slightly_smiling_face:
 
 ### GitHub
 
-We're going to start by creating a repository and pushing your website to GitHub, if this is your first time using Git, GitHub, or any source control system in the past then you can learn more about them from [here](https://medium.com/@shiivangii/all-about-git-and-github-c4b987df1b16).
+We're going to start by creating a repository and pushing your website to GitHub, if this is your first time using Git, GitHub, or any source control system in the past then you can learn more about them from [here][ref-git].
 
 Once you've got your repository set up and have pushed your website to GitHub, we can jump over to AWS to start setting up the infrastructure to host your website. Let's make a start!
 
@@ -81,7 +81,7 @@ Permission Name | Purpose |
 `AmazonS3FullAccess` | Allows the user to write objects (the website) to S3.
 `CloudFrontFullAccess` | Allows the user to create invalidations on CloudFront, this is going to be used to quickly update your content. Note see :information_source: below discussing invalidations
 
-*:information_source: Only the first 1000 invalidations per month are free, if you think you're going to be uploading content more frequently than this then I'd recommend you create versioned file names for your website rather than creating invalidations each time, see [AWS's explanation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html#Invalidation_Expiration) on this.*
+*:information_source: Only the first 1000 invalidations per month are free, if you think you're going to be uploading content more frequently than this then I'd recommend you create versioned file names for your website rather than creating invalidations each time, see [AWS's explanation][aws-invalidations] on this.*
 
 The next step allows you to add tags to the user to make it easy to identify the user later on, I've chosen to skip this step in the example but you're welcome to add any tags you want to.
 
@@ -268,3 +268,19 @@ If you navigate to the `Actions` tab on your repository you should be able to se
 If that is the case then your website has been fully deployed by GitHub and is live on AWS! :sunglasses:
 
 Congratulations :tada: Go to your website URL to see the results! :heart:
+
+<!-- Links -->
+
+<!-- 3rd Party -->
+[github]: https://github.com/
+[aws]: https://aws.amazon.com/
+[jekyll]: https://jekyllrb.com/
+
+<!-- References -->
+[ref-git]: https://medium.com/@shiivangii/all-about-git-and-github-c4b987df1b16/
+[aws-invalidations]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html#Invalidation_Expiration/
+
+<!-- Acronyms -->
+*[HTML]: Hyper Text Markup Language
+*[CSS]: Cascading Style Sheets
+*[JS]: JavaScript
