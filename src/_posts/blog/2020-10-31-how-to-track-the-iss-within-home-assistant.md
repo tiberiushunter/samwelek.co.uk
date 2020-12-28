@@ -9,11 +9,11 @@ cover-credit: <span>Photo by <a href="https://unsplash.com/@norbertkowalczyk?utm
 
 ## Introduction
 
-In this post I will be running through the process of tracking the International Space Station from within Home Assistant using a mixture of REST APIs, MQTT and the Map Card Lovelace component :satellite:
+In this post I will be running through the setup process of tracking the International Space Station from within Home Assistant using a mixture of REST APIs, MQTT and the Map Card Lovelace component :satellite:
 
->There does already exist an [ISS integration](https://www.home-assistant.io/integrations/iss/) for Home Assistant however I don't believe it has been updated for a while, I might have a play with it in the future to update the APIs used to fetch the data especially for use with the Map. 
+>:information_source: There does already exist an [ISS integration][ha-iss] for Home Assistant however I've seen a few others struggling to get this to work as expected, when you add the `show_on_map` property it returns an error asking for an API key.
 >
->I've seen a few others struggling to get this to work as expected, when you add the `show_on_map` property it returns an error asking for an API key, therefore the solution below is to use pure REST APIs which can be easily modified in the future as well as adding the additional functionality of including further sensors to track specific data from the ISS.
+>The solution below therefore uses pure REST APIs which can be easily maintained in the future as well as adding the additional functionality of including further sensors to track specific data from the ISS.
 
 - toc
 {: toc }
@@ -22,22 +22,21 @@ In this post I will be running through the process of tracking the International
 
 ### Prerequisites
 
-- A currently running instance of [Home Assistant](https://www.home-assistant.io/)
-- An Internet connection
+- A running instance of [Home Assistant][ha]
 
 ### What are we going to be using?
 
-So, before we dive in, I've listed below the integrations we're going to be using, further on in this guide I'll be describing what each one does for us as we go along with a few code snippets :+1:
+Listed below are the integrations we're going to be using, further on in this guide I'll be describing what each one does for us as we go - along with a few code snippets :+1:
 
-- [Sensors (REST, Template Platforms)](https://www.home-assistant.io/integrations/sensor/)
-- [Device Trackers (MQTT JSON)](https://www.home-assistant.io/integrations/mqtt_json/)
-- [Automations](https://www.home-assistant.io/docs/automation/)
+- [Sensors (REST, Template Platforms)][ha-sensor]
+- [Device Trackers (MQTT JSON)][ha-mqtt-json]
+- [Automations][ha-automation]
 
 ## YAML Configuration
 
 Firstly, we're going to get started by writing up the YAML configuration used to track the ISS (or any other satellite/GPS entities with a REST API).
 
-On an *off-the-shelf* style installation of Home Assistant this will involve the `configuration.yaml` file however, depending on your particular directory setup, you'll need to decide where you want to put these configuration snippets to match your needs.
+On an *off-the-shelf* style installation of Home Assistant this will involve the `configuration.yaml` file however depending on your particular directory setup, you'll need to decide where you want to put these configuration snippets to match your needs.
 
 ### Sensors
 
@@ -159,9 +158,9 @@ Below is the full YAML configuration for the Sensor integration, be sure to chan
 
 #### ISS Location Update
 
-Now we're going to create an [Automation](https://www.home-assistant.io/docs/automation/) that will publish the data from the `iss_coordinates` sensor we created previously for Home Assistant to use. This will be triggered whenever the state of the sensor changes (i.e. when it receives new coordinates).
+Next we're going to create an [Automation][ha-automation] that will publish the data from the `iss_coordinates` sensor we created previously for Home Assistant to use. This will be triggered whenever the state of the sensor changes (i.e. when it receives new coordinates).
 
-We're going to be publishing the data using a [MQTT topic](https://www.home-assistant.io/docs/mqtt/service/) entitled `location/iss`
+We're going to be publishing the data using a [MQTT topic][ha-mqtt-topic] entitled `location/iss`
 
 ```yaml
 - alias: 'ISS Location Update'
@@ -178,7 +177,7 @@ We're going to be publishing the data using a [MQTT topic](https://www.home-assi
 
 ### Device Tracker
 
-Finally, the last step in our YAML configuration is to add the [Device Tracker](https://www.home-assistant.io/integrations/device_tracker) integration and use the [MQTT JSON](https://www.home-assistant.io/integrations/mqtt_json) platform to retrieve the published data from the `location/iss` topic we created in the previous section.
+Finally, the last step in our YAML configuration is to add the [Device Tracker][ha-device-tracker] integration and use the [MQTT JSON][ha-mqtt-json] platform to retrieve the published data from the `location/iss` topic we created in the previous section.
 
 ```yaml
 device_tracker:
@@ -191,7 +190,7 @@ This should now let you see the ISS from within Home Assistant on the default Ma
 
 ## Lovelace
 
-Once you've saved the configuration and restarted Home Assistant, you can now get started with creating new card(s) to display the data.
+Once you've saved the configuration and restarted Home Assistant, you can now get started with creating new cards to display the data on the dashboard.
 
 ### Map Card
 
@@ -219,11 +218,11 @@ Once you've got your icon ready you can then use the UI to add the image by addi
 
 ### Final Results
 
-Below shows how I've currently decided to show the ISS on my Home Assistant instance, it makes use of the custom `vertical-stack-in-card` lovelace card which you can install from the Home Assistant Community Store - [HACS](https://hacs.xyz/).
+Below shows how I've decided to show the ISS on my Home Assistant instance, it makes use of the custom `vertical-stack-in-card` lovelace card which you can install from the Home Assistant Community Store - [HACS][hacs].
 
 ![Final Card](/assets/images{{ page.url }}card.png)
 
-See below for the YAML I've used to create it:
+Below shows the YAML I've used to create it:
 
 ```yaml
 type: 'custom:vertical-stack-in-card'
@@ -266,7 +265,7 @@ cards:
 
 #### Additional Pass Time Sensors
 
-In my example card above I've created a few additional sensors which can be used to easily pull out the next five rise times and durations using the [Template](https://www.home-assistant.io/integrations/template/) platform as seen below:
+In my example card above I've created a few additional sensors which can be used to easily pull out the next five rise times and durations using the [Template][ha-template] platform as seen below:
 
 {% raw %}
 
@@ -307,4 +306,20 @@ In my example card above I've created a few additional sensors which can be used
 
 {% endraw %}
 
+If you wish to see the latest implementation for this on my own setup the check out my [Configuration][project-url] repository.
+
 Hopefully this guide has helped you create a few new cards for tracking the ISS (or any other satellite out there)! :sunglasses:
+
+<!-- Project Specific -->
+[project-url]: https://github.com/tiberiushunter/hassio-config/
+[hacs]: https://hacs.xyz/
+
+<!-- Home Assistant -->
+[ha]: https://www.home-assistant.io/
+[ha-iss]: https://www.home-assistant.io/integrations/iss/
+[ha-automation]: https://www.home-assistant.io/docs/automation/
+[ha-sensor]: https://www.home-assistant.io/integrations/sensor/
+[ha-device-tracker]: /https://www.home-assistant.io/integrations/device_tracker/
+[ha-template]: https://www.home-assistant.io/integrations/template/
+[ha-mqtt-json]: https://www.home-assistant.io/integrations/mqtt_json/
+[ha-mqtt-topic]: https://www.home-assistant.io/docs/mqtt/service/
