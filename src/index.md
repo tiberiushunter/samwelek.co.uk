@@ -25,4 +25,5 @@ description: The Personal Website of Sam Welek, A UK based Software Developer. H
 [linkedin-url]: https://linkedin.com/in/sam-welek
 
 [twitter-shield]: https://img.shields.io/badge/-Twitter-black.svg?style=for-the-badge&logo=twitter&colorB=555
-[twitter-url]: https://twitter.com/samwele
+[twitter-url]: https://twitter.com/samwelek
+
