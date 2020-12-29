@@ -7,8 +7,13 @@
   src: url("/assets/font/SourceCodePro-Regular.ttf") format("truetype");
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--spacer);
   font-weight: 600;
   line-height: 1.25;
   color: var(--heading-color);
@@ -35,19 +40,22 @@ h4 {
   font-size: 1.35rem;
 }
 
-h5, h6 {
+h5,
+h6 {
   margin-top: 1.25rem;
   font-size: 1.25rem;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacer);
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacer);
 }
 
 dt {
@@ -55,7 +63,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 hr {
@@ -66,23 +74,20 @@ hr {
 }
 
 abbr {
-  font-size: 85%;
-  font-weight: bold;
-  color: var(--gray-600);
-  text-transform: uppercase;
-
+  color: var(--gray-400);
+  text-shadow: 0 0 5px var(--gray-400);
+  text-decoration: none;
   &[title] {
     cursor: help;
-    border-bottom: 1px dotted var(--border-color);
   }
 }
 
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
   color: var(--gray-300);
-  border-left: .25rem solid var(--border-color);
-  background-color: var(--gray-900);
+  border-left: 0.25rem solid var(--border-color);
+  background-color: #181a1f;
 
   p:last-child {
     margin-bottom: 0;
@@ -98,6 +103,10 @@ figure {
   margin: 0;
 }
 
+strong {
+  font-weight: 400;
+  text-shadow: 0 0 5px var(--body-color);
+}
 
 // Markdown footnotes
 //
@@ -108,7 +117,7 @@ a[href^="#fn:"],
 // Back to footnote link
 a[href^="#fnref:"] {
   display: inline-block;
-  margin-left: .1rem;
+  margin-left: 0.1rem;
   font-weight: bold;
 }
 
@@ -133,7 +142,7 @@ a[href^="#fnref:"] {
 // Emoji
 
 img.emoji {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   display: inline;
   vertical-align: middle;
 }

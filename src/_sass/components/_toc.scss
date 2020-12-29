@@ -4,8 +4,13 @@
   padding: var(--spacer-2) var(--spacer-3);
   margin-bottom: var(--spacer);
   border-width: 1px 0;
-  padding-top:  var(--spacer);
+  padding-top: var(--spacer);
   padding-bottom: var(--spacer);
+
+  a {
+    text-shadow: none;
+    color: var(--link-color);
+  }
 
   &::before {
     display: block;
@@ -13,5 +18,9 @@
     content: "Contents";
     font-size: 100%;
     font-weight: 500;
+  }
+
+  .language-plaintext.highlighter-rouge {
+    color: var(--link-color);
   }
 }

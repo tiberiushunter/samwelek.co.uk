@@ -76,10 +76,10 @@ On the next screen we're going to specify the permissions this user will have. T
 
 The table below shows the permissions we're going to set for the user and discusses the purpose of each one with regards to your website.
 
-Permission Name | Purpose |
----|---|
-`AmazonS3FullAccess` | Allows the user to write objects (the website) to S3.
-`CloudFrontFullAccess` | Allows the user to create invalidations on CloudFront, this is going to be used to quickly update your content. Note see :information_source: below discussing invalidations
+| Permission Name        | Purpose                                                                                                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `AmazonS3FullAccess`   | Allows the user to write objects (the website) to S3.                                                                                                                        |
+| `CloudFrontFullAccess` | Allows the user to create invalidations on CloudFront, this is going to be used to quickly update your content. Note see :information_source: below discussing invalidations |
 
 *:information_source: Only the first 1000 invalidations per month are free, if you think you're going to be uploading content more frequently than this then I'd recommend you create versioned file names for your website rather than creating invalidations each time, see [AWS's explanation][aws-invalidations] on this.*
 
@@ -89,7 +89,7 @@ Finally, you'll be presented with a screen similar to the one below allowing you
 
 ![IAM Review Create User](/assets/images{{ page.url }}AWS5.png)
 
-After you create the user you'll be presented with the user's `access_key` and `secret_access_key`, **take note of these** as you'll need them for GitHub later and **you will not be able to see the `secret_access_key` again after leaving this page**, this is how GitHub will log in as the user you've just created - for now though you're done! :sunglasses:
+After you create the user you'll be presented with the user's `access_key` and `secret_access_key`, **take note of these** as you'll need them for GitHub later and **you will not be able to see the** `secret_access_key` **again after leaving this page**, this is how GitHub will log in as the user you've just created - for now though you're done! :sunglasses:
 
 ### Creating an S3 Bucket
 
@@ -199,12 +199,12 @@ When you're done, click `Define simple record` - Now let's set up [GitHub :rocke
 
 Now we've got your IAM user, CloudFront Distribution and S3 Bucket all set up we can add the following details to your GitHub repository.
 
-Secret Name | Secret Value |
----|---|
-`AWS_ACCESS_KEY_ID` | `access_key` from AWS IAM
-`AWS_SECRET_ACCESS_KEY` | `secret_access_key` from AWS IAM
-`CLOUDFRONT_DIST_ID` | `<your_cloudfront_id>` the ID of the AWS CloudFront Distribution
-`S3_BUCKET` | `s3://` followed by your bucket name e.g. `s3://myamazingsite.co.uk`
+| Secret Name             | Secret Value                                                         |
+| ----------------------- | -------------------------------------------------------------------- |
+| `AWS_ACCESS_KEY_ID`     | `access_key` from AWS IAM                                            |
+| `AWS_SECRET_ACCESS_KEY` | `secret_access_key` from AWS IAM                                     |
+| `CLOUDFRONT_DIST_ID`    | `<your_cloudfront_id>` the ID of the AWS CloudFront Distribution     |
+| `S3_BUCKET`             | `s3://` followed by your bucket name e.g. `s3://myamazingsite.co.uk` |
 
 *Note: If you're not using CloudFront then you can omit the* `CLOUDFRONT_DIST_ID`.
 
