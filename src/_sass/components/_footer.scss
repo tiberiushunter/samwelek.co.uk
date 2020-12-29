@@ -4,10 +4,10 @@ footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
   padding-top: var(--spacer);
-	border-top: 1px solid var(--border-color);
-	font-size: 85%;
+  border-top: 1px solid var(--border-color);
+  font-size: 85%;
 
-	position: absolute;
+  position: absolute;
   bottom: 0;
   width: 95%;
   height: 15vh;
@@ -17,22 +17,22 @@ footer {
     flex-wrap: wrap;
   }
 
-  .coffeeBadge{
+  .coffeeBadge {
     float: right;
     max-width: 50%;
     margin-left: auto;
   }
 
-  .copyright{
+  .copyright {
     margin-top: var(--spacer);
   }
 }
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
- footer {
-   height: 10vh;
- }
+  footer {
+    height: 10vh;
+  }
 }
 
 /*Mobile Query*/
@@ -40,28 +40,28 @@ footer {
   footer {
     height: 18vh;
     max-width: 90%;
-  
-   .coffeeBadge{
+
+    .coffeeBadge {
       max-width: 100%;
       margin-right: auto;
       margin-left: 0;
       margin-top: var(--spacer);
     }
 
-    .footer-links{
-      max-width: 100%
+    .footer-links {
+      max-width: 100%;
     }
   }
 }
 
 /*Tablet Query*/
-@media only screen and (min-width: 481px) and (max-width:768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   footer {
-    .coffeeBadge{
+    .coffeeBadge {
       max-width: 100%;
     }
-    .footer-links{
-      max-width: 100%
+    .footer-links {
+      max-width: 100%;
     }
   }
 }

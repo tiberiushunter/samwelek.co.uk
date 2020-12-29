@@ -8,7 +8,12 @@
   margin-bottom: 3em;
 
   li + li {
-    margin-top: .25rem;
+    margin-top: 0.25rem;
+  }
+
+  a {
+    text-shadow: 0 0 3px var(--gold-750);
+    color: var(--gold-750);
   }
 }
 
@@ -36,23 +41,22 @@
   padding-bottom: var(--spacer-2);
 
   .cover-caption > figcaption {
-    margin-top: calc(var(--spacer)*-0.5);
+    margin-top: calc(var(--spacer) * -0.5);
     font-style: italic;
     font-size: 85%;
     float: right;
   }
 }
 
-.post-date-tag-container{
+.post-date-tag-container {
   display: flex;
   flex-wrap: wrap;
-   margin-top: calc(var(--spacer)*-1);
-
+  margin-top: calc(var(--spacer) * -1);
 }
 
 // Meta data line below post title
 .post-date {
-  max-width:33%;
+  max-width: 33%;
   color: var(--link-color);
   font-weight: 300;
   span {
@@ -66,13 +70,11 @@
 
 // Tags
 .post-tags {
-  max-width:50%;
+  max-width: 50%;
   margin-left: auto; // margin-top: calc(var(--spacer-3)*-1);
   small {
-   
     font-weight: 300;
     color: var(--gray-600);
-
   }
   a {
     text-decoration: none;
@@ -107,8 +109,6 @@
   }
 }
 
-
-
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
   .post-divider {
@@ -119,12 +119,12 @@
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
   .post-tags {
-    max-width:100%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: 0;
   }
   .post-date {
-    max-width:100%
+    max-width: 100%;
   }
   .post-divider {
     width: 50%;
@@ -132,15 +132,14 @@
 }
 
 /*Tablet Query*/
-@media only screen and (min-width: 481px) and (max-width:768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .post-tags {
-    max-width:100%;
+    max-width: 100%;
   }
   .post-date {
-    max-width:100%
+    max-width: 100%;
   }
   .post-divider {
     width: 30%;
   }
 }
-

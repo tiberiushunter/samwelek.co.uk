@@ -72,8 +72,7 @@ The first sensor we're going to create will be used to consume the timestamp, la
 
 The next sensor we're going to create is one that tracks fly over pass times of the station, it takes latitude and longitude query string parameters and returns the next five pass times.
 
-Make sure to change the `xx.xxxx` values with your latitude and longitude.
-{: .message }
+**Make sure to change the** `xx.xxxx` **values with your latitude and longitude.**
 
 ```yaml
 - platform: rest
@@ -323,7 +322,7 @@ Hopefully this guide has helped you create a few new cards for tracking the ISS 
 [ha-iss]: https://www.home-assistant.io/integrations/iss/
 [ha-automation]: https://www.home-assistant.io/docs/automation/
 [ha-sensor]: https://www.home-assistant.io/integrations/sensor/
-[ha-device-tracker]: /https://www.home-assistant.io/integrations/device_tracker/
+[ha-device-tracker]: https://www.home-assistant.io/integrations/device_tracker/
 [ha-template]: https://www.home-assistant.io/integrations/template/
 [ha-mqtt-json]: https://www.home-assistant.io/integrations/mqtt_json/
 [ha-mqtt-topic]: https://www.home-assistant.io/docs/mqtt/service/

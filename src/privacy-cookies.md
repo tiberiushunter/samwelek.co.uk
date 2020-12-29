@@ -13,11 +13,11 @@ This page aims to outline and detail what cookies and scripts we have created as
 - toc
 {: toc }
 
-> :grey_question: <b>What are cookies?</b>
+> :grey_question: **What are cookies?**
 >
 > A cookie is a small file that is sent along with the pages of this website and is stored by your browser on the hard drive of your computer or another device. The information stored therein may be returned to the servers of the relevant third parties during a subsequent visit.
 >
-> :grey_question: <b>What are scripts?</b>
+> :grey_question: **What are scripts?**
 >
 > A script is a piece of code that is used to make our website function properly and interactively. This code is executed locally on your device in your browser.
 
