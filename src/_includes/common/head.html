@@ -1,23 +1,44 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Custom Title tag -->
   <title>
-    {% if page.title == "Home" %}
-    {{ site.title }}
-    {% else %}
-    {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+    {% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title }}
+    &middot; {{ site.title }} {% endif %}
   </title>
 
-  <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png' | relative_url }}">
-  <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="{{ '/assets/apple-touch-icon.png' | relative_url }}"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{{ '/assets/favicon-32x32.png' | relative_url }}"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{{ '/assets/favicon-16x16.png' | relative_url }}"
+  />
+  <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}" />
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="{{ site.title }}"
+    href="{{ 'atom.xml' | relative_url }}"
+  />
+  <link
+    rel="sitemap"
+    type="application/xml"
+    title="Sitemap"
+    href="/sitemap.xml"
+  />
 
   {% include social/twitter-head.html %}
 
@@ -26,7 +47,9 @@
 
   <!-- Adds og:image if the page has a cover image to show -->
   {% if page.cover != blank %}
-  <meta property="og:image" content="{{ site.url }}/assets/images{{ page.url }}{{ page.cover }}">
+  <meta
+    property="og:image"
+    content="{{ site.url }}/assets/images{{ page.url }}{{ page.cover }}"
+  />
   {% endif %}
-
 </head>

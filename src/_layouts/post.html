@@ -7,20 +7,21 @@ layout: default
   <h2 class="lead">{{ page.description }}</h2>
   <div class="post-date-tag-container">
     <aside class="post-date">
-      <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date"><small><span>Posted on</span>
-          {{ page.date | date_to_string }}</small></time>
+      <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date"
+        ><small
+          ><span>Posted on</span> {{ page.date | date_to_string }}</small
+        ></time
+      >
     </aside>
     <span class="post-divider"></span>
     {% if page.tags != empty %}
     <aside class="post-tags">
-      <small>Tags:
-        {% for tag in page.tags %}
-          {% if forloop.last == true %}
-            <a href="/tags/{{ tag }}/">{{ tag }}</a>
-          {% else %}
-            <a href="/tags/{{ tag }}/">{{ tag }}</a> &middot;
-          {% endif %}
-        {% endfor %}
+      <small
+        >Tags: {% for tag in page.tags %} {% if forloop.last == true %}
+        <a href="/tags/{{ tag }}/">{{ tag }}</a>
+        {% else %}
+        <a href="/tags/{{ tag }}/">{{ tag }}</a> &middot; {% endif %} {% endfor
+        %}
       </small>
     </aside>
     {% endif %}
@@ -28,19 +29,18 @@ layout: default
   {% if page.cover %}
   <div class="post-cover">
     <figure class="cover-caption">
-      <img class="cover" src="/assets/images{{ page.url }}{{ page.cover }}" alt="Cover Photo" />
-      <figcaption>
-        {{ page.cover-credit }}
-      </figcaption>
+      <img
+        class="cover"
+        src="/assets/images{{ page.url }}{{ page.cover }}"
+        alt="Cover Photo"
+      />
+      <figcaption>{{ page.cover-credit }}</figcaption>
     </figure>
   </div>
-  {% endif %}
-  {{ content }}
+  {% endif %} {{ content }}
 </article>
 
-{% include social/share-buttons.html %}
-
-{% if site.related_posts != empty %}
+{% include social/share-buttons.html %} {% if site.related_posts != empty %}
 <aside class="related">
   <h3>You may also enjoy</h3>
   <ul class="related-posts">
@@ -48,7 +48,11 @@ layout: default
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
-        <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+        <small
+          ><time datetime="{{ post.date | date_to_xmlschema }}"
+            >{{ post.date | date_to_string }}</time
+          ></small
+        >
       </a>
     </li>
     {% endfor %}
