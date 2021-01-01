@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include common/head.html %}
+  {% include common/head.html %}
 
-<body>
-  <div class="page-container">
-    <div class="content-container">
-      <header class="masthead">
-        <div class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+  <body>
+    <div class="page-container">
+      <div class="content-container">
+        <header class="masthead">
+          <div class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
 
-          <nav class="nav">
-            {% for nav in site.nav %}
-            <small><a href="{{ site.baseurl }}{{ nav.url }}/">{{ nav.title }}</a></small>
-            {% endfor %}
-          </nav>
-        </div>
-      </header>
+            <nav class="nav">
+              {% for nav in site.nav %}
+              <small
+                ><a href="{{ site.baseurl }}{{ nav.url }}/"
+                  >{{ nav.title }}</a
+                ></small
+              >
+              {% endfor %}
+            </nav>
+          </div>
+        </header>
 
-      <main>
-        {{ content }}
-      </main>
-
+        <main>{{ content }}</main>
+      </div>
+      <footer class="footer">{% include common/footer.html %}</footer>
     </div>
-    <footer class="footer">
-      {% include common/footer.html %}
-    </footer>
-  </div>
-  {% include cookies/cookie-consent.html %}
-</body>
-
+    {% include cookies/cookie-consent.html %}
+  </body>
 </html>
