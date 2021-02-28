@@ -151,3 +151,11 @@ img.emoji {
   display: inline;
   vertical-align: middle;
 }
+
+p.error {
+  color: var(--red);
+}
+
+p.success {
+  color: var(--green);
+}
