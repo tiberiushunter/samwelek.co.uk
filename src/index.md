@@ -5,8 +5,8 @@ description: The Personal Website of Sam Welek, A UK based Software Developer. H
 ---
 
 <div class="home-section-content">
-  <img class="profile-img" src="assets/images/profile.jpg" alt="Profile Picture">
-  <div class="typing">
+  <img class="home-profile-img" src="assets/images/profile.jpg" alt="Profile Picture">
+  <div class="home-typing">
     <h1>Sam Welek</h1>
     <h2>Software Developer</h2>
   </div>

@@ -1,0 +1,12 @@
+#contact-form{
+    padding-top: var(--spacer-2);
+}
+
+/*Desktop Query*/
+@media only screen and (min-width: 768px) {
+    #contact-form{
+        margin: auto;
+        width: 50%;
+    }
+  }
+  
