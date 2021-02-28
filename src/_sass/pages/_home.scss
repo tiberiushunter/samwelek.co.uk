@@ -6,14 +6,14 @@
   flex-direction: column;
 }
 
-.profile-img {
+.home-profile-img {
   height: auto;
   background-size: cover;
   border-radius: 50%;
   margin-top: -55vh;
 }
 
-.typing {
+.home-typing {
   margin: 1vh;
   font-family: "Source Code Pro", monospace;
   text-shadow: 0 0 3px var(--body-color);
@@ -88,7 +88,7 @@
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-  .profile-img {
+  .home-profile-img {
     width: 10vw;
   }
   .home-section-content {
@@ -99,7 +99,7 @@
 
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
-  .profile-img {
+  .home-profile-img {
     width: 30vw;
     margin-top: -40vh;
   }
@@ -110,7 +110,7 @@
 
 /*Tablet Query*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .profile-img {
+  .home-profile-img {
     width: 16vw;
     margin-top: -50vh;
   }
