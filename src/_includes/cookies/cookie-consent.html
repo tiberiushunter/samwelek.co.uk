@@ -44,6 +44,13 @@
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
+
+		// Google reCAPTCHAv3
+		(function () {
+			var rc = document.createElement('script'); rc.type = 'text/javascript'; rc.async = true;
+			rc.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google.com/recaptcha/api.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(rc, s);
+		})();
 	} else if (readCookie('cookie-approval-status') == 'false') {
 		// Don't use Google Analytics and don't show banner
 	}

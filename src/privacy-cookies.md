@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy & Cookie Policy
-description: Last updated 09 Oct 2020
+description: Last updated 01 Mar 2021
 ---
 
 ## Introduction
@@ -29,7 +29,7 @@ This page aims to outline and detail what cookies and scripts we have created as
 
 This cookie controls whether or not the `Cookie and Scripts` banner is shown on the bottom of every screen.
 
-It's purpose is to track whether or not the user has given us their consent to allow certain third party cookies and scripts to run.
+The purpose of this is to track whether or not a user has given us their consent to allow certain third party cookies and scripts to run.
 
 If the `Decline` button on the banner is clicked then we store that approval has **not been given** and all third party cookies and scripts will be disabled, except for the ones that provide core functionality that without would render the website non functional and useless.
 
@@ -62,6 +62,26 @@ Cookie Name | Retention Period | Purpose | Detailed Link | Required?
 `__utmc` | *Session* | Performance | [__utmc](https://cookiepedia.co.uk/cookies/__utmc) | No :heavy_multiplication_x:
 `__utmt` | 10 minutes | Performance | [__utmt](https://cookiepedia.co.uk/cookies/__utmt) | No :heavy_multiplication_x:
 `__utmz` | 6 months | Performance | [__utmz](https://cookiepedia.co.uk/cookies/__utmz) | No :heavy_multiplication_x:
+
+#### Google reCAPTCHA v3
+
+This website also uses Google reCAPTCHA v3 which collects certain software and hardware information from users to determine whether or not they are human or a bot.
+
+This is used to prevent spam on the [Contact](/contact/) page.
+
+The reCAPTCHA algorithm checks to see if there is a Google cookie placed on the computer being used. An additional reCAPTCHA-specific cookie will then be added to the user’s browser allowing a complete snapshot of the user’s browser window at that moment in time.
+
+Information gathered includes:
+
+* All cookies placed by Google over the last 6 months
+* How many mouse clicks you’ve made on that screen (or touches on a touch device)
+* The CSS information for that page
+* The date
+* The language your browser is set to
+* Any plugins you have installed on the browser
+* All Javascript objects
+
+You can learn more about Google reCAPTCHA, including Google's Privacy Policy [here](https://policies.google.com/privacy)
 
 #### CloudFlare
 
