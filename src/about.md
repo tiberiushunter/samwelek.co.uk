@@ -39,7 +39,7 @@ See below for a selection of projects I've worked on or visit my [GitHub][github
 
 ## Get in Touch
 
-Feel free to reach out and [contact me][contact] for more details
+Feel free to reach out and [Contact][contact] me for more details
 
 [koderly]: https://www.koder.ly/
 [fujitsu]: https://www.fujitsu.com/uk/
