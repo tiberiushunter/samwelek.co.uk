@@ -48,7 +48,7 @@
 		// Google reCAPTCHAv3
 		(function () {
 			var rc = document.createElement('script'); rc.type = 'text/javascript'; rc.async = true;
-			rc.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google.com/recaptcha/api.js';
+			rc.src = ('https:' == document.location.protocol ? 'https://www' : 'http://www') + '.google.com/recaptcha/api.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(rc, s);
 		})();
 	} else if (readCookie('cookie-approval-status') == 'false') {
