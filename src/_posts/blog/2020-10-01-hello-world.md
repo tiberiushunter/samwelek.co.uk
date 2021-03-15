@@ -1,5 +1,6 @@
 ---
 layout: post
+type: blog
 title: Hello World!
 description: So this looks like this...
 tags: ["hello world", "jekyll"]

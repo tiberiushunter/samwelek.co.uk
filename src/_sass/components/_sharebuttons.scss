@@ -1,0 +1,99 @@
+#share-buttons {
+  display: inline-block;
+  vertical-align: middle;
+
+  :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  div {
+    position: relative;
+    text-align: left;
+    height: 36px;
+    width: 32px;
+    float: left;
+    text-align: center;
+
+    a {
+      svg {
+        height: 16px;
+        fill: #d5d5d5;
+        margin-top: 10px;
+      }
+    }
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .facebook {
+    a {
+      svg {
+        height: 18px;
+        margin-top: 9px;
+      }
+    }
+  }
+
+  .facebook:hover {
+    a {
+      svg {
+        fill: #3b5998;
+      }
+    }
+  }
+
+  .twitter {
+    a {
+      svg {
+        height: 20px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .twitter:hover {
+    a {
+      svg {
+        fill: #55acee;
+      }
+    }
+  }
+
+  .linkedin {
+    a {
+      svg {
+        height: 19px;
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .linkedin:hover {
+    a {
+      svg {
+        fill: #0077b5;
+      }
+    }
+  }
+
+  .mail {
+    a {
+      svg {
+        height: 14px;
+        margin-top: 11px;
+      }
+    }
+  }
+
+  .mail:hover {
+    a {
+      svg {
+        fill: #7d7d7d;
+      }
+    }
+  }
+}
