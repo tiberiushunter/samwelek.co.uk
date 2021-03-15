@@ -16,7 +16,7 @@ description: Use the form below to send me a message or reach out to me on socia
   <input type="email" id="emailInput" name="email" required>
 
   <label for="messageInput" class="form-label required">Message</label>
-  <textarea rows="6" type="textarea" id="messageInput" name="message" required></textarea>
+  <textarea rows="6" id="messageInput" name="message" required></textarea>
 
   <button type="submit"
         id="submit"
