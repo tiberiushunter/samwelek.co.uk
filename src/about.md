@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About
 ---
 
 <div class="about-profile-page">
@@ -31,7 +31,7 @@ See below for a selection of projects I've worked on or visit my [GitHub][github
     {% for post in posts %}
     <div class="post-card">
      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-        <img class="post-cover" src="/assets/images{{ post.url }}{{ post.cover }}"/>
+        <img class="post-cover" alt="Abstract Project Photo" src="/assets/images{{ post.url }}{{ post.cover }}"/>
        {{ post.title }}
        </a>
     </div>
