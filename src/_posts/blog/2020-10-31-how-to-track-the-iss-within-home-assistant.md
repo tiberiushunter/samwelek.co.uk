@@ -1,6 +1,5 @@
 ---
 layout: post
-type: blog
 title: How to Track the ISS within Home Assistant
 description: Follow the International Space Station overhead
 tags: ["hassio", "guides"]
