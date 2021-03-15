@@ -1,5 +1,6 @@
 ---
 layout: post
+type: project
 title: hassio-config
 description: My Home Assistant configuration running on a RPi4
 tags: ["hassio"]

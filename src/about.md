@@ -12,9 +12,10 @@ title: About Me
 </div>
 
 {:.about-profile-clear}
+
 ## Experience
 
-During my university degree, I undertook a placement year at [Koderly][koderly] (*formally Web Applications UK*) as a software developer with a focus on learning, growth and innovation. My roles included development, testing, delivery, and support of core applications for the Travel industry.
+During my university degree, I undertook a placement year at [Koderly][koderly] (*formerly Web Applications UK*) as a software developer with a focus on learning, growth and innovation. My roles included development, testing, delivery, and support of core applications for the Travel industry.
 
 After graduating, I joined the [Fujitsu][fujitsu] graduate scheme where I worked on a variety of accounts, gaining experience with multiple methodologies and tech stacks. During my time at Fujitsu I also formed and led an agile development team, designed solutions and further developed both my technical and professional skill sets.
 
