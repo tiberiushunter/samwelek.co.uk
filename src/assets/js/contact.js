@@ -1,6 +1,6 @@
 $(document).ready(function () {
   if (readCookie("cookie-approval-status") != "true") {
-    submit.prop("disabled", true);
+    $("#submit").prop("disabled", true);
     $("#form__message").append(
       '<p class="warning">Cookie consent must be accepted to get in touch, you can either clear your cookies to accept them or reach out directly through social media.</p>'
     );
