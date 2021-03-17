@@ -109,4 +109,25 @@ describe("Front Matter on Posts", function () {
       }
     });
   });
+
+  test("Post urls must end with a backslash", () => {
+    const { posts } = this.site;
+
+    posts.forEach((post) => {
+      printOnFail(post.path, () => {
+        expect(post.url).toMatch(/\/$/i);
+      });
+    });
+  });
+  
+  test("Post urls must match the valid format", () => {
+    const { posts } = this.site;
+    const validUrlRegex = /^(\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[A-z\-\.]+\/)$/;
+
+    posts.forEach((post) => {
+      printOnFail(post.path, () => {
+        expect(post.url).toMatch(validUrlRegex);
+      });
+    });
+  });
 });
