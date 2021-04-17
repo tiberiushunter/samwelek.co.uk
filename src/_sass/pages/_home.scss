@@ -1,16 +1,14 @@
 .home-section-content {
   padding: var(--spacer);
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .home-profile-img {
-  height: auto;
+  height: 12rem;
   background-size: cover;
   border-radius: 50%;
-  margin-top: -55vh;
 }
 
 .home-typing {
@@ -88,34 +86,20 @@
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-  .home-profile-img {
-    width: 10vw;
-  }
   .home-section-content {
-    margin-top: 55vh;
-    margin-bottom: -2.5rem;
+    margin-top:5vw;
+    padding-bottom:5vw;
+
   }
 }
 
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
-  .home-profile-img {
-    width: 30vw;
-    margin-top: -40vh;
-  }
-  .home-section-content {
-    margin-top: 40vh;
-  }
+
 }
 
 /*Tablet Query*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .home-profile-img {
-    width: 16vw;
-    margin-top: -50vh;
-  }
 
-  .home-section-content {
-    margin-top: 50vh;
-  }
+
 }
