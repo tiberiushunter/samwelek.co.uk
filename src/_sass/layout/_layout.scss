@@ -16,17 +16,6 @@
   padding-bottom: 15vh; /* Footer height */
 }
 
-.shield {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding-top: var(--spacer);
-  border-top: 1px solid var(--border-color);
-  img {
-    margin-bottom: 0;
-  }
-}
-
 .post-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -51,27 +40,11 @@
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-  .shield {
-    margin-left: var(--spacer-3);
-    margin-right: var(--spacer-3);
-    img {
-      margin-left: var(--spacer-2);
-      margin-right: var(--spacer-2);
-      width: 75%;
-    }
-  }
+
 }
 
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
-  .shield {
-    margin-left: 0;
-    margin-right: 0;
-    img {
-      margin-left: 0.1rem;
-      margin-right: 0.1rem;
-    }
-  }
   .post-card {
     max-width: 100%;
   }
@@ -82,12 +55,5 @@
 
 /*Tablet Query*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .shield {
-    margin-left: var(--spacer);
-    margin-right: var(--spacer);
-    img {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
-  }
+
 }

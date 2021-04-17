@@ -1,8 +1,6 @@
 // Footer
 
 footer {
-  margin-top: var(--spacer-3);
-  margin-bottom: var(--spacer-3);
   padding-top: var(--spacer);
   border-top: 1px solid var(--border-color);
   font-size: 85%;
@@ -19,34 +17,5 @@ footer {
   
   .copyright {
     margin-top: var(--spacer);
-  }
-}
-
-/*Desktop Query*/
-@media only screen and (min-width: 768px) {
-  footer {
-    height: 10vh;
-  }
-}
-
-/*Mobile Query*/
-@media only screen and (max-width: 480px) {
-  footer {
-    height: 18vh;
-    max-width: 90%;
-  
-    .footer-links {
-      max-width: 100%;
-    }
-  }
-}
-
-/*Tablet Query*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  footer {
-
-    .footer-links {
-      max-width: 100%;
-    }
   }
 }
