@@ -16,13 +16,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .coffeeBadge {
-    float: right;
-    max-width: 50%;
-    margin-left: auto;
-  }
-
+  
   .copyright {
     margin-top: var(--spacer);
   }
@@ -40,14 +34,7 @@ footer {
   footer {
     height: 18vh;
     max-width: 90%;
-
-    .coffeeBadge {
-      max-width: 100%;
-      margin-right: auto;
-      margin-left: 0;
-      margin-top: var(--spacer);
-    }
-
+  
     .footer-links {
       max-width: 100%;
     }
@@ -57,9 +44,7 @@ footer {
 /*Tablet Query*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   footer {
-    .coffeeBadge {
-      max-width: 100%;
-    }
+
     .footer-links {
       max-width: 100%;
     }
