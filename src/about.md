@@ -30,7 +30,7 @@ See below for a selection of projects I've worked on or visit my [GitHub][github
 <div class="post-card-container">
     {% for post in posts %}
     <div class="post-card">
-     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+     <a href="{{ site.baseurl }}{{ post.url }}">
         <img class="post-cover" alt="Abstract Project Photo" src="/assets/images{{ post.url }}{{ post.cover }}"/>
        {{ post.title }}
        </a>
