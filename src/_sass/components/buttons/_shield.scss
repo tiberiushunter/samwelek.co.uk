@@ -6,11 +6,9 @@
     justify-content: center;
     margin: 0;
     img {
-      transition: all 0.05s ease-in-out;
-      clip-path: polygon(0 0, 83% 0, 83% 100%, 0% 100%);
-    }
-    img:hover {
-      transform: scale(1.5);
+      clip-path: polygon(0 0, 60% 0, 60% 100%, 0% 100%);
+      display: inline-table;
+      position: relative;
     }
   }
 }
@@ -18,11 +16,14 @@
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
   .shield-row {
-
     img {
+      transition: all 0.05s ease-in-out;
       height: 4rem;
       margin-left: var(--spacer-2);
       margin-right: var(--spacer-2);
+    }
+    img:hover {
+      transform: scale(1.5);
     }
   }
 }
@@ -30,13 +31,10 @@
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
   .shield-container {
-    padding-top: var(--spacer);
-    padding-bottom: 0;
+      bottom: -20rem;
     .shield-row {
-
       img {
-        height: 2rem;
-   
+        height: 5rem;
       }
     }
   }
@@ -46,7 +44,7 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .shield-row {
     img {
-      height: 3rem;
+      height: 5rem;
     }
   }
 }

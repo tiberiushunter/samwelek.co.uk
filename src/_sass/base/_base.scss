@@ -6,8 +6,19 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 99%;
+}
+
 body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacer-2);
+  padding-right: var(--spacer-2);
+  
   font-family: var(--body-font);
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
@@ -16,6 +27,10 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   overflow-y: scroll;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 // No `:visited` state is required by default (browsers will use `a`)
