@@ -1,14 +1,16 @@
 // Footer
 
 footer {
+  flex-shrink: 0;
   padding-top: var(--spacer);
+  padding-bottom: var(--spacer-3);
   border-top: 1px solid var(--border-color);
   font-size: 85%;
 
-  position: absolute;
-  bottom: 0;
-  width: 95%;
-  height: 15vh;
+  // position: absolute;
+  // bottom: 0;
+  // width: 95%;
+  // height: 20vh;
 
   .footer-link-container {
     display: flex;
@@ -16,6 +18,6 @@ footer {
   }
   
   .copyright {
-    margin-top: var(--spacer);
+    margin-top: calc(var(--spacer)/2);
   }
 }

@@ -13,7 +13,7 @@
   font-weight: 600;
   line-height: 1.25;
   color: var(--heading-color);
-  margin-top: 1.5rem;
+  margin-top: var(--spacer);
   font-size: 1.25rem;
 
   a {
@@ -24,11 +24,4 @@
     font-weight: 400;
     opacity: 0.5;
   }
-}
-
-// Navbar styles
-.nav {
-  float: right;
-  line-height: 1.25rem;
-  word-spacing: var(--spacer);
 }
