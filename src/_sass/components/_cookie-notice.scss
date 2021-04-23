@@ -3,14 +3,15 @@
   display: none;
   text-align: center;
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
-  background: #003366;
-}
+  background: var(--dark-blue);
 
-#cookie-notice a {
-  display: inline-block;
-  cursor: pointer;
+  a {
+    display: inline-block;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 767px) {
@@ -18,10 +19,12 @@
     display: block;
     padding-top: 3px;
     margin-bottom: var(--spacer);
+
+    a {
+      position: relative;
+      bottom: 4px;
+    }
   }
 
-  #cookie-notice a {
-    position: relative;
-    bottom: 4px;
-  }
+ 
 }
