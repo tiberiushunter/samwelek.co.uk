@@ -5,12 +5,6 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.home-profile-img {
-  height: 12rem;
-  background-size: cover;
-  border-radius: 50%;
-}
-
 .home-typing {
   margin: 1vh;
   font-family: "Source Code Pro", monospace;
@@ -87,19 +81,15 @@
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
   .home-section-content {
-    margin-top:5vw;
-    padding-bottom:5vw;
-
+    margin-top: 5vw;
+    padding-bottom: 5vw;
   }
 }
 
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
-
 }
 
 /*Tablet Query*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
-
 }

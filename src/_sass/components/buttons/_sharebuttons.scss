@@ -17,10 +17,12 @@
     text-align: center;
 
     a {
+      img,
       svg {
-        height: 16px;
-        fill: #d5d5d5;
-        margin-top: 10px;
+        height: 1.2rem;
+        margin-top: 8px;
+        filter: invert(97%) sepia(0%) saturate(846%) hue-rotate(162deg)
+          brightness(114%) contrast(67%);
       }
     }
 
@@ -29,62 +31,29 @@
     }
   }
 
-  .facebook {
-    a {
-      svg {
-        height: 18px;
-        margin-top: 9px;
-      }
-    }
-  }
-
   .facebook:hover {
     a {
-      svg {
-        fill: #3b5998;
-      }
-    }
-  }
-
-  .twitter {
-    a {
-      svg {
-        height: 20px;
-        margin-top: 8px;
+      img {
+        filter: invert(32%) sepia(20%) saturate(1711%) hue-rotate(183deg)
+          brightness(95%) contrast(85%);
       }
     }
   }
 
   .twitter:hover {
     a {
-      svg {
-        fill: #55acee;
-      }
-    }
-  }
-
-  .linkedin {
-    a {
-      svg {
-        height: 19px;
-        margin-top: 7px;
+      img {
+        filter: invert(63%) sepia(21%) saturate(1235%) hue-rotate(166deg)
+          brightness(96%) contrast(94%);
       }
     }
   }
 
   .linkedin:hover {
     a {
-      svg {
-        fill: #0077b5;
-      }
-    }
-  }
-
-  .mail {
-    a {
-      svg {
-        height: 14px;
-        margin-top: 11px;
+      img {
+        filter: invert(30%) sepia(91%) saturate(1068%) hue-rotate(172deg)
+          brightness(97%) contrast(101%);
       }
     }
   }
