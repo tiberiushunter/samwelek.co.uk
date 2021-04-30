@@ -1,8 +1,13 @@
 .buymeacoffee {
-  .bmc-btn{
-    height:40px;
+  margin-top: var(--spacer);
+
+  .bmc-btn {
+    margin-top: var(--spacer);
+    height: 40px;
   }
-  .bmc-btn:hover, .bmc-btn:active, .bmc-btn:focus{
-    color:#000;
+  .bmc-btn:hover,
+  .bmc-btn:active,
+  .bmc-btn:focus {
+    color: #000;
   }
 }

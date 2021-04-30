@@ -40,8 +40,9 @@ layout: default
   {% endif %} {{ content }}
 </article>
 
-{% include social/buy-me-a-coffee.html %}
-{% include social/share-buttons.html %} {% if site.related_posts != empty %}
+{% include social/share-buttons.html %} {% if site.related_posts != empty %} {%
+include social/buy-me-a-coffee.html %}
+
 <aside class="related">
   <h3>You may also enjoy</h3>
   <ul class="related-posts">

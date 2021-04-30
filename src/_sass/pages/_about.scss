@@ -1,21 +1,13 @@
-.about-profile-page {
-    .about-profile-img {
-        height: 12rem;
-        background-size: cover;
-        border-radius: 50%;
-    }    
-}
-
 .about-profile-clear {
-    clear:both;
+  clear: both;
 }
 
 /*Desktop Query*/
 @media only screen and (min-width: 768px) {
-    .about-profile-img {
-        float: left;
-    }    
-    .about-profile-text { 
-        margin-left: 14rem;
-    }
+  .profile-img {
+    float: left;
   }
+  .about-profile-text {
+    margin-left: 14rem;
+  }
+}
