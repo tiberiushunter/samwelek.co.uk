@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "ClassicConsole";
+  src: url("/assets/font/ClassicConsole.ttf") format("truetype");
+  font-display: swap;
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +27,7 @@ h4,
 h5,
 h6 {
   margin-bottom: var(--spacer);
-  font-weight: 600;
+  font-weight: var(--heading-font-weight);
   line-height: 1.25;
   color: var(--heading-color);
 }
@@ -81,8 +87,8 @@ hr {
 }
 
 abbr {
-  color: var(--gray-400);
-  text-shadow: 0 0 5px var(--gray-400);
+  color: var(--abbr-color);
+  text-shadow: 0 0 2px var(--abbr-color);
   text-decoration: none;
   &[title] {
     cursor: help;
@@ -92,9 +98,9 @@ abbr {
 blockquote {
   padding: 0.5rem 1rem;
   margin: 0.8rem 0;
-  color: var(--gray-300);
+  color: var(--body-color);
   border-left: 0.25rem solid var(--border-color);
-  background-color: #181a1f;
+  background-color: var(--code-bg);
 
   p:last-child {
     margin-bottom: 0;
@@ -112,7 +118,7 @@ figure {
 
 strong {
   font-weight: 400;
-  text-shadow: 0 0 5px var(--body-color);
+  text-shadow: 0 0 2px var(--body-color);
 }
 
 // Markdown footnotes

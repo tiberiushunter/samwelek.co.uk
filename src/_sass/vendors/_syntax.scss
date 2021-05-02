@@ -1,7 +1,7 @@
 /* Base16 Tomorrow Dark by Chris Kempson; https://github.com/idleberg */
 
 .highlight .hll {
-  background-color: #373b41;
+  background-color: --code-bg;
 }
 .highlight .c {
   color: #969896;
@@ -198,9 +198,9 @@
 } /* Literal.Number.Integer.Long */
 
 .language-plaintext.highlighter-rouge {
-  color: var(--gold-750);
+  color: var(--post-link-color);
   font-weight: 200;
-  background-color: #0a0a0a;
-  border: 1px solid #2c2c33;
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
   padding: 2px;
 }

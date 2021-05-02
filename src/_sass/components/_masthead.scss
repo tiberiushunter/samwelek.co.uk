@@ -10,11 +10,11 @@
 
 .masthead-title {
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: var(--heading-font-weight);
   line-height: 1.25;
   color: var(--heading-color);
   margin-top: var(--spacer);
-  font-size: 1.25rem;
+  font-size: var(--nav-font-size);
 
   a {
     text-decoration: none;
@@ -22,6 +22,6 @@
 
   small {
     font-weight: 400;
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }

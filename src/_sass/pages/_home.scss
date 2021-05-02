@@ -7,7 +7,7 @@
 
 .home-typing {
   margin: 1vh;
-  font-family: "Source Code Pro", monospace;
+  font-family: var(--code-font);
   text-shadow: 0 0 3px var(--body-color);
 
   h1 {
@@ -74,7 +74,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: var(--gold-750);
+    border-color: var(--primary-color);
   }
 }
 

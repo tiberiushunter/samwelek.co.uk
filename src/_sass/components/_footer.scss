@@ -16,8 +16,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
+  .footer-theme {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
   .copyright {
-    margin-top: calc(var(--spacer)/2);
+    margin-top: calc(var(--spacer) / 2);
   }
 }
