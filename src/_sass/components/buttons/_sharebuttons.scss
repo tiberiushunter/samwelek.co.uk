@@ -21,8 +21,7 @@
       svg {
         height: 1.2rem;
         margin-top: 8px;
-        filter: invert(97%) sepia(0%) saturate(846%) hue-rotate(162deg)
-          brightness(114%) contrast(67%);
+        filter: var(--svg-filter);
       }
     }
 

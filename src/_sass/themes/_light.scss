@@ -1,0 +1,25 @@
+[data-theme="light"] {
+  --primary-color: var(--gray-700);
+  --body-color: var(--gray-700);
+  --body-bg-color: #fff;
+
+  --link-color: rgba(0, 0, 0, 0.75);
+  --link-hover-color: #000;
+
+  --post-link-color: var(--blue);
+  --post-link-hover-color: #1c7ed6;
+
+  --heading-color: var(--gray-900);
+
+  --border-color: var(--gray-300);
+
+  --code-color: var(--grape);
+  --code-bg: var(--gray-000);
+
+  --table-color: var(--gray-700);
+
+  --abbr-color: var(--gray-700);
+
+  --svg-filter: invert(25%) sepia(0%) saturate(7335%) hue-rotate(158deg)
+    brightness(115%) contrast(70%);
+}

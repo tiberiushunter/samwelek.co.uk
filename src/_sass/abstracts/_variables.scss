@@ -29,18 +29,26 @@
   --gold-750: rgba(255, 215, 0, 0.75);
   --gold-800: rgba(255, 215, 0, 0.8);
 
+  --primary-color: var(--gold-750);
+
   --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --body-font-size: 18px;
   --body-line-height: 1.5;
   --body-color: hsl(0, 0%, 85%);
-  --body-bg: rgb(13, 17, 23);
+  --body-bg-color: rgb(13, 17, 23);
 
   --link-color: rgba(255, 255, 255, 0.75);
   --link-hover-color: #fff;
 
+  --post-link-color: var(--gold-750);
+  --post-link-hover-color: var(--gold-400);
+
   --heading-color: var(hsl(0, 0%, 85%));
+  --heading-font-weight: 600;
+
+  --nav-font-size: 1.25rem;
 
   --border-color: var(--gray-800);
   --border-radius: 0.25rem;
@@ -55,4 +63,9 @@
   --spacer-3: calc(var(--spacer) * 3);
 
   --table-color: var(--gray-700);
+
+  --abbr-color: var(--gray-400);
+
+  --svg-filter: invert(100%) sepia(0%) saturate(7335%) hue-rotate(158deg)
+    brightness(115%) contrast(70%);
 }

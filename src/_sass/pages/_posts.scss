@@ -10,8 +10,12 @@
   }
 
   a {
-    text-shadow: 0 0 3px var(--gold-750);
-    color: var(--gold-750);
+    text-shadow: 0 0 2px var(--post-link-color);
+    color: var(--post-link-color);
+  }
+  a:hover{
+    color: var(--post-link-hover-color);
+    text-shadow: none;
   }
 }
 
@@ -55,7 +59,7 @@
 // Meta data line below post title
 .post-date {
   max-width: 33%;
-  color: var(--link-color);
+  color: var(--body-color);
   font-weight: 300;
   span {
     color: var(--gray-600);

@@ -1,0 +1,33 @@
+[data-theme="retro"] {
+  --primary-color: blue;
+
+  --body-color: #fff;
+  --body-bg-color: #000;
+  --body-font: "ClassicConsole";
+  --body-font-size: 26px;
+  --body-line-height: 1.25;
+
+  --link-color: #fff;
+  --link-hover-color: #fff;
+
+  --post-link-color: #fff;
+  --post-link-hover-color: #fff;
+
+  --heading-color: #fff;
+  --heading-font-weight: 400;
+
+  --nav-font-size: 2rem;
+
+  --border-color: #fff;
+
+  --code-font: "ClassicConsole";
+  --code-color: #fff;
+  --code-bg: blue;
+
+  --table-color: #fff;
+
+  --abbr-color: #fff;
+
+  --svg-filter: invert(100%) sepia(0%) saturate(7335%) hue-rotate(158deg)
+    brightness(115%) contrast(70%);
+}
