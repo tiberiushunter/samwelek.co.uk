@@ -4,19 +4,20 @@
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("/assets/font/SourceCodePro-Regular.ttf") format("truetype");
+  src: local("Source Code Pro"),
+    url("/assets/font/SourceCodePro-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/assets/font/Montserrat-Regular.ttf") format("truetype");
+  src: local("Montserrat"), url("/assets/font/Montserrat-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "ClassicConsole";
-  src: url("/assets/font/ClassicConsole.ttf") format("truetype");
+  src: local("ClassicConsole"), url("/assets/font/ClassicConsole.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -27,9 +28,9 @@ h4,
 h5,
 h6 {
   margin-bottom: var(--spacer);
-  font-weight: var(--heading-font-weight);
+  font-weight: var(--f-heading-weight);
   line-height: 1.25;
-  color: var(--heading-color);
+  color: var(--f-heading-color);
 }
 
 h1 {
@@ -88,7 +89,7 @@ hr {
 
 abbr {
   color: var(--abbr-color);
-  text-shadow: 0 0 2px var(--abbr-color);
+  text-shadow: var(--text-shadow);
   text-decoration: none;
   &[title] {
     cursor: help;
@@ -98,7 +99,7 @@ abbr {
 blockquote {
   padding: 0.5rem 1rem;
   margin: 0.8rem 0;
-  color: var(--body-color);
+  color: var(--f-body-color);
   border-left: 0.25rem solid var(--border-color);
   background-color: var(--code-bg);
 
@@ -118,7 +119,7 @@ figure {
 
 strong {
   font-weight: 400;
-  text-shadow: 0 0 2px var(--body-color);
+  text-shadow: var(--text-shadow);
 }
 
 // Markdown footnotes
@@ -161,13 +162,13 @@ img.emoji {
 }
 
 p.error {
-  color: var(--red);
+  color: var(--c-red);
 }
 
 p.success {
-  color: var(--green);
+  color: var(--c-green);
 }
 
 p.warning {
-  color: var(--yellow);
+  color: var(--c-yellow);
 }

@@ -1,25 +1,33 @@
 [data-theme="light"] {
-  --primary-color: var(--gray-700);
-  --body-color: var(--gray-700);
+  --primary-color: var(--c-gray-700);
+  --secondary-color: var(--c-light-blue);
+
+  --f-body-color: var(--c-gray-700);
   --body-bg-color: #fff;
 
-  --link-color: rgba(0, 0, 0, 0.75);
-  --link-hover-color: #000;
+  --f-link-color: rgba(0, 0, 0, 0.75);
+  --f-link-hover-color: #000;
 
-  --post-link-color: var(--blue);
-  --post-link-hover-color: #1c7ed6;
+  --f-button-color: var(--c-white);
 
-  --heading-color: var(--gray-900);
+  --f-post-link-color: var(--c-blue);
+  --f-post-link-hover-color: var(--c-blue);
 
-  --border-color: var(--gray-300);
+  --f-heading-color: var(--c-gray-900);
 
-  --code-color: var(--grape);
-  --code-bg: var(--gray-000);
+  --border-color: var(--c-gray-300);
 
-  --table-color: var(--gray-700);
+  --f-code-color: var(--c-grape);
+  --code-bg: var(--c-gray-050);
 
-  --abbr-color: var(--gray-700);
+  --table-color: var(--c-gray-700);
+
+  --f-abbr-color: var(--c-gray-700);
+
+  --text-shadow: none;
+  --text-shadow-variant: none;
 
   --svg-filter: invert(25%) sepia(0%) saturate(7335%) hue-rotate(158deg)
     brightness(115%) contrast(70%);
+
 }

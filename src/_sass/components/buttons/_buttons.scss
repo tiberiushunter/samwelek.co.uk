@@ -1,33 +1,34 @@
 .btn {
-  font-weight: 800;
-  border:0;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--f-button-weight);
+  border: 0;
+  font-family: var(--f-button);
   border-radius: 5px;
   font-size: 85%;
   text-decoration: none;
   transition: all 0.3s;
-  &:hover, &:active {
+  color: var(--f-button-color);
+  &:hover,
+  &:active {
     &:not([disabled]) {
-    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.25);
+      box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.25);
+    }
   }
-}
 }
 
 [type="submit"] {
   width: 100%;
-  background: var(--green);
+  background: var(--c-green);
   cursor: pointer;
-  color: var(--gray-900);
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  margin-top:10px;
-  
+  color: var(--c-gray-900);
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
-[type="submit"]:disabled{
-  background: var(--gray-700);
-  color: var(--gray-500);
+[type="submit"]:disabled {
+  background: var(--c-gray-700);
+  color: var(--c-gray-500);
 }
 
 .btn.btn-sm {
@@ -44,13 +45,13 @@
 }
 
 .btn.btn-primary {
-  background-color: var(--green);
+  background-color: var(--c-green);
 }
+
 .btn.btn-info {
-  background-color: var(--cyan);
+  background-color: var(--c-cyan);
 }
 
 .btn.btn-danger {
-  background-color: var(--red);
+  background-color: var(--c-red);
 }
-

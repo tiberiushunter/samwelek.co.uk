@@ -1,62 +1,67 @@
-$(document).ready(function () {
+var ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+};
+
+ready(() => {
   if (readCookie("cookie-approval-status") != "true") {
-    $("#submit").prop("disabled", true);
-    $("#form__message").append(
-      '<p class="warning">Cookie consent must be accepted to get in touch, you can either clear your cookies to accept them or reach out directly through social media.</p>'
-    );
+    document.querySelector("#submit").disabled = true;
+    var warning = document.createElement("p");
+    warning.classList.add("warning");
+    warning.textContent =
+      "Cookie consent must be accepted to get in touch, you can either clear your cookies to accept them or reach out directly through social media.";
+
+    document.querySelector("#form__message").appendChild(warning);
   }
 });
 
 function validateForm() {
-  var error = "";
-  $("#form__message").empty();
+  let error = "";
+  document.querySelector("#form__message").textContent = "";
+
+  const nameRegExp = /^[A-Za-z ]+$/;
+  const phoneRegExp = /^[0-9 +]+$/;
+  const emailRegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
   // Check name
   if (
-    $("#nameInput").length <= 0 ||
-    !$("#nameInput")
-      .val()
-      .match(/^[A-Za-z ]+$/)
+    document.querySelector("#nameInput").value.length <= 0 ||
+    !nameRegExp.test(document.querySelector("#nameInput").value)
   ) {
-    error += '<p class="error">Name has failed validation checks!</p>';
+    error += '<p class="error">Name has failed validation checks</p>';
   }
 
   // Check phone
   if (
-    $("#phoneInput").val() > 0 &&
-    !$("#phoneInput")
-      .val()
-      .match(/^[0-9 +]+$/)
+    document.querySelector("#phoneInput").value.length > 0 &&
+    !phoneRegExp.test(document.querySelector("#phoneInput").value)
   ) {
-    error += '<p class="error">Phone number isn\'t in a valid format!</p>';
+    error += '<p class="error">Phone number isn\'t in a valid format</p>';
   }
 
   // Check email
-  if (
-    !$("#emailInput")
-      .val()
-      .match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)
-  ) {
-    error += '<p class="error">Email address is invalid!</p>';
+  if (!emailRegExp.test(document.querySelector("#emailInput").value)) {
+    error += '<p class="error">Email address is invalid</p>';
   }
 
   if (error.length > 0) {
-    $("#form__message").append(error);
+    document.querySelector("#form__message").appendChild(error);
   } else {
     submitForm();
   }
 }
 
 function submitForm() {
-  $("#form__message").empty();
+  document.querySelector("#form__message").textContent = "";
+  let message = document.createElement("p");
   axios
     .post(
       "https://fuucfgr9t6.execute-api.eu-west-2.amazonaws.com/prod/",
       {
-        name: $("#nameInput").val(),
-        phone: $("#phoneInput").val(),
-        email: $("#emailInput").val(),
-        message: $("#messageInput").val(),
+        name: document.querySelector("#nameInput").value,
+        phone: document.querySelector("#phoneInput").value,
+        email: document.querySelector("#emailInput").value,
+        message: document.querySelector("#messageInput").value,
         token: document.querySelector(
           "#contact-form textarea[name='g-recaptcha-response']"
         ).value,
@@ -68,15 +73,18 @@ function submitForm() {
       }
     )
     .then(function (response) {
-      $("#form__message").html(
-        '<p class="success">Message sent successfully!</p>'
-      );
-      $("#submit").prop("disabled", true);
+      if (!document.querySelector("#success")) {
+        message.classList.add("success");
+        message.textContent = "Message sent successfully!";
+      }
     })
     .catch(function (error) {
-      $("#form__message").append(
-        '<p class="error">Something didn\'t go quite right there... Message failed to send!</p>'
-      );
-      $("#submit").prop("disabled", true);
+      if (!document.querySelector("#error")) {
+        message.classList.add("error");
+        message.textContent =
+          "Something didn't go quite right there... Message failed to send!";
+      }
     });
+  document.querySelector("#form__message").appendChild(message);
+  document.querySelector("#submit").disabled = true;
 }

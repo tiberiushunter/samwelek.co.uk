@@ -10,11 +10,11 @@
   }
 
   a {
-    text-shadow: 0 0 2px var(--post-link-color);
-    color: var(--post-link-color);
+    text-shadow: var(--text-shadow-variant);
+    color: var(--f-post-link-color);
   }
-  a:hover{
-    color: var(--post-link-hover-color);
+  a:hover {
+    color: var(--f-post-link-hover-color);
     text-shadow: none;
   }
 }
@@ -22,7 +22,7 @@
 // Blog post or page title
 .page-title,
 .post-title {
-  color: var(--heading-color);
+  color: var(--f-heading-color);
 }
 .page-title,
 .post-title {
@@ -59,10 +59,10 @@
 // Meta data line below post title
 .post-date {
   max-width: 33%;
-  color: var(--body-color);
+  color: var(--f-body-color);
   font-weight: 300;
   span {
-    color: var(--gray-600);
+    color: var(--c-gray-600);
   }
 }
 
@@ -73,10 +73,10 @@
 // Tags
 .post-tags {
   max-width: 50%;
-  margin-left: auto; // margin-top: calc(var(--spacer-3)*-1);
+  margin-left: auto;
   small {
     font-weight: 300;
-    color: var(--gray-600);
+    color: var(--c-gray-600);
   }
   a {
     text-decoration: none;
@@ -106,7 +106,7 @@
     text-decoration: none;
 
     small {
-      color: var(--gray-600);
+      color: var(--c-gray-600);
     }
   }
 }

@@ -7,11 +7,6 @@ footer {
   border-top: 1px solid var(--border-color);
   font-size: 85%;
 
-  // position: absolute;
-  // bottom: 0;
-  // width: 95%;
-  // height: 20vh;
-
   .footer-link-container {
     display: flex;
     flex-wrap: wrap;
@@ -24,5 +19,9 @@ footer {
 
   .copyright {
     margin-top: calc(var(--spacer) / 2);
+  }
+
+  .msdos {
+    height: 60px;
   }
 }

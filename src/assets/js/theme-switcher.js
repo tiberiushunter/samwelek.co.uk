@@ -1,32 +1,26 @@
-const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+const toggleSwitch = document.querySelector(".switch .switch__input");
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
+toggleSwitch.addEventListener("change", function () {
+  document.querySelector('body').classList.add("transition");
+  if (this.checked) {
+    setTheme("light");
   } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
+    setTheme("dark");
   }
-}
+});
 
-toggleSwitch.addEventListener("change", switchTheme, false);
+function setTheme(themeName) {
+  document.documentElement.setAttribute("data-theme", themeName);
+  localStorage.setItem("theme", themeName);
 
-const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
-
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "light") {
+  if (themeName === "light") {
     toggleSwitch.checked = true;
-  } else if (currentTheme === "retro") {
-    konamiTheme();
+  } else if (themeName === "retro") {
+    createKonamiLogo();
   }
 }
 
-var pattern = [
+var konamiPattern = [
   "ArrowUp",
   "ArrowUp",
   "ArrowDown",
@@ -38,43 +32,52 @@ var pattern = [
   "b",
   "a",
 ];
-var current = 0;
 
-var keyHandler = function (event) {
-  // If the key isn't in the pattern, or isn't the current key in the pattern, reset
-  if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
-    current = 0;
-    return;
-  }
+var konamiKeyCount = 0;
 
-  // Update how much of the pattern is complete
-  current++;
-
-  // If complete, alert and reset
-  if (pattern.length === current) {
-    current = 0;
-    const currentTheme = localStorage.getItem("theme")
-      ? localStorage.getItem("theme")
-      : null;
-    if (currentTheme === "retro") {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-      $(".switch").show();
-      $("#msdos").remove();
-    } else {
-      konamiTheme();
+document.addEventListener(
+  "keydown",
+  function (event) {
+    if (
+      konamiPattern.indexOf(event.key) < 0 ||
+      event.key !== konamiPattern[konamiKeyCount]
+    ) {
+      konamiKeyCount = 0;
+      return;
     }
-  }
-};
+    konamiKeyCount++;
 
-// Listen for keydown events
-document.addEventListener("keydown", keyHandler, false);
+    if (konamiPattern.length === konamiKeyCount) {
+      konamiKeyCount = 0;
 
-function konamiTheme() {
-  document.documentElement.setAttribute("data-theme", "retro");
-  localStorage.setItem("theme", "retro");
-  $(".switch").hide();
-  $(".switch").after(
-    "<img id='msdos' alt='MS-Dos' src='/assets/icons/MSDOS.png' style='height:60px;'>"
-  );
+      if (localStorage.theme === "retro") {
+        setTheme("dark");
+        toggleSwitch.checked = false;
+        document.querySelector(".switch").style.display = "block";
+        document.querySelectorAll(".msdos").forEach((e) => e.remove());
+      } else {
+        setTheme("retro");
+      }
+    }
+  },
+  false
+);
+
+function createKonamiLogo() {
+  var msdosElem = document.createElement("img");
+  msdosElem.classList.add("msdos");
+  msdosElem.src = "/assets/icons/MSDOS.png";
+  msdosElem.alt = "MS-Dos";
+
+  document.querySelector(".switch").style.display = "none";
+  document.querySelector(".switch").after(msdosElem);
 }
+
+// Initialise Theme
+(function () {
+  if (localStorage.theme) {
+    setTheme(localStorage.theme);
+  } else {
+    setTheme("dark");
+  }
+})();

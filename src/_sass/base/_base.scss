@@ -1,9 +1,10 @@
-// Body resets
-//
-// Update the foundational and global aspects of the page.
 
 * {
   box-sizing: border-box;
+}
+
+.transition {
+  transition: all 1s;
 }
 
 html, body {
@@ -18,11 +19,10 @@ body {
   margin-right: auto;
   padding-left: var(--spacer-2);
   padding-right: var(--spacer-2);
-  
-  font-family: var(--body-font);
-  font-size: var(--body-font-size);
+  font-family: var(--f-body-font);
+  font-size: var(--f-body-size);
   line-height: var(--body-line-height);
-  color: var(--body-color);
+  color: var(--f-body-color);
   background-color: var(--body-bg-color);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -35,13 +35,13 @@ body {
 
 // No `:visited` state is required by default (browsers will use `a`)
 a {
-  color: var(--link-color);
+  color: var(--f-link-color);
   text-decoration: none;
 
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    color: var(--link-hover-color);
+    color: var(--f-link-hover-color);
   }
 
   strong {
@@ -83,12 +83,6 @@ th {
 
 thead th {
   border-bottom-color: currentColor;
-}
-
-mark {
-  padding: 0.15rem;
-  background-color: var(--yellow-100);
-  border-radius: 0.125rem;
 }
 
 /* width */

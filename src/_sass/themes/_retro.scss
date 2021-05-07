@@ -1,32 +1,38 @@
 [data-theme="retro"] {
   --primary-color: blue;
 
-  --body-color: #fff;
+  --f-body-color: #fff;
   --body-bg-color: #000;
-  --body-font: "ClassicConsole";
-  --body-font-size: 26px;
+  --f-body-font: "ClassicConsole";
+  --f-button-font: "ClassicConsole";
+  --f-button-weight: 400;
+
+  --f-body-size: 26px;
   --body-line-height: 1.25;
 
-  --link-color: #fff;
-  --link-hover-color: #fff;
+  --f-link-color: #fff;
+  --f-link-hover-color: #fff;
 
-  --post-link-color: #fff;
-  --post-link-hover-color: #fff;
+  --f-post-link-color: var(--c-gold);
+  --f-post-link-hover-color: var(--c-gold);
 
-  --heading-color: #fff;
-  --heading-font-weight: 400;
+  --f-heading-color: #fff;
+  --f-heading-font-weight: 400;
 
-  --nav-font-size: 2rem;
+  --f-nav-size: 2rem;
 
   --border-color: #fff;
 
-  --code-font: "ClassicConsole";
-  --code-color: #fff;
-  --code-bg: blue;
+  --f-code-font: "ClassicConsole";
+  --f-code-color: #fff;
+  --code-bg: var(--primary-color);
 
   --table-color: #fff;
 
-  --abbr-color: #fff;
+  --f-abbr-color: #fff;
+
+  --text-shadow: none;
+  --text-shadow-variant: none;
 
   --svg-filter: invert(100%) sepia(0%) saturate(7335%) hue-rotate(158deg)
     brightness(115%) contrast(70%);
