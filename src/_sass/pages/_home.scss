@@ -7,8 +7,8 @@
 
 .home-typing {
   margin: 1vh;
-  font-family: var(--code-font);
-  text-shadow: 0 0 3px var(--body-color);
+  font-family: var(--f-code-font);
+  text-shadow: var(--text-shadow);
 
   h1 {
     width: 0;
