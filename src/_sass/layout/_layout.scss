@@ -24,19 +24,9 @@
   }
 }
 
-/*Desktop Query*/
-@media only screen and (min-width: 768px) {
-
-}
-
 /*Mobile Query*/
 @media only screen and (max-width: 480px) {
   .post-card {
     max-width: 100%;
   }
-}
-
-/*Tablet Query*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-
 }

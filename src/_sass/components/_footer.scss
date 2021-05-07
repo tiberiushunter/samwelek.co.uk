@@ -19,6 +19,9 @@ footer {
 
   .copyright {
     margin-top: calc(var(--spacer) / 2);
+    small {
+      color: var(--c-gray-500);
+    }
   }
 
   .msdos {
