@@ -15,7 +15,7 @@ ready(() => {
   }
 });
 
-function validateForm() {
+document.getElementById('submit').addEventListener("click", function () {
   let error = "";
   document.querySelector("#form__message").textContent = "";
 
@@ -49,7 +49,8 @@ function validateForm() {
   } else {
     submitForm();
   }
-}
+});
+
 
 function submitForm() {
   document.querySelector("#form__message").textContent = "";
