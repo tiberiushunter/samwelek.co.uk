@@ -29,5 +29,5 @@ description: Use the form below to send me a message or reach out to me on socia
 
 </form>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/assets/js/axios.min.js"></script>
 <script src="/assets/js/contact.js"></script>
