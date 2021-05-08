@@ -22,10 +22,10 @@ description: Use the form below to send me a message or reach out to me on socia
         id="submit"
         class="btn btn-submit g-recaptcha"
         data-sitekey="6LcrQGwaAAAAAODk2BdrQJSlYMj90B4kXlRjbO4S"
-        data-callback="submitForm"
+        data-callback="validateForm"
         >Submit</button>
 
-  <div id="form__message" style="margin-top:20px;text-align:center"></div>
+  <div id="form__messages"></div>
 
 </form>
 
