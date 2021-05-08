@@ -6,18 +6,33 @@ var ready = (callback) => {
 ready(() => {
   if (readCookie("cookie-approval-status") != "true") {
     document.querySelector("#submit").disabled = true;
-    var warning = document.createElement("p");
-    warning.classList.add("warning");
-    warning.textContent =
-      "Cookie consent must be accepted to get in touch, you can either clear your cookies to accept them or reach out directly through social media.";
 
-    document.querySelector("#form__message").appendChild(warning);
+    let message = createMessage(
+      "Cookie consent must be accepted to get in touch, you can either clear your cookies to accept them or reach out directly through social media.",
+      "warning"
+    );
+
+    document.querySelector("#form__messages").appendChild(message);
   }
 });
 
-document.getElementById('submit').addEventListener("click", function () {
-  let error = "";
-  document.querySelector("#form__message").textContent = "";
+function createMessage(message, severity) {
+  var element = document.createElement("p");
+  element.classList.add("form__message");
+  element.classList.add(severity);
+  element.textContent = message;
+
+  return element;
+}
+
+document.getElementById("submit").addEventListener("click", function () {
+  validateForm();
+});
+
+function validateForm() {
+  let messages = [];
+
+  document.querySelectorAll(".form__message").forEach((e) => e.remove());
 
   const nameRegExp = /^[A-Za-z ]+$/;
   const phoneRegExp = /^[0-9 +]+$/;
@@ -28,7 +43,7 @@ document.getElementById('submit').addEventListener("click", function () {
     document.querySelector("#nameInput").value.length <= 0 ||
     !nameRegExp.test(document.querySelector("#nameInput").value)
   ) {
-    error += '<p class="error">Name has failed validation checks</p>';
+    messages.push(createMessage("Name has failed validation checks", "error"));
   }
 
   // Check phone
@@ -36,56 +51,63 @@ document.getElementById('submit').addEventListener("click", function () {
     document.querySelector("#phoneInput").value.length > 0 &&
     !phoneRegExp.test(document.querySelector("#phoneInput").value)
   ) {
-    error += '<p class="error">Phone number isn\'t in a valid format</p>';
+    messages.push(
+      createMessage("Phone number isn't in a valid format", "error")
+    );
   }
 
   // Check email
   if (!emailRegExp.test(document.querySelector("#emailInput").value)) {
-    error += '<p class="error">Email address is invalid</p>';
+    messages.push(createMessage("Email address is invalid", "error"));
   }
 
-  if (error.length > 0) {
-    document.querySelector("#form__message").appendChild(error);
+  if (messages.length > 0) {
+    messages.forEach((x) => {
+      document.querySelector("#form__messages").appendChild(x);
+    });
   } else {
     submitForm();
   }
-});
-
+}
 
 function submitForm() {
-  document.querySelector("#form__message").textContent = "";
-  let message = document.createElement("p");
-  axios
-    .post(
-      "https://fuucfgr9t6.execute-api.eu-west-2.amazonaws.com/prod/",
-      {
-        name: document.querySelector("#nameInput").value,
-        phone: document.querySelector("#phoneInput").value,
-        email: document.querySelector("#emailInput").value,
-        message: document.querySelector("#messageInput").value,
-        token: document.querySelector(
-          "#contact-form textarea[name='g-recaptcha-response']"
-        ).value,
-      },
-      {
-        headers: {
-          "Content-Type": "application/json;charset=UTF-8",
+  document.querySelectorAll(".form__message").forEach((e) => e.remove());
+  let message = createMessage("Thank you for getting in touch.", "success");
+
+  if (readCookie("recently-sent-message") != "true") {
+    axios
+      .post(
+        "https://fuucfgr9t6.execute-api.eu-west-2.amazonaws.com/prod/",
+        {
+          name: document.querySelector("#nameInput").value,
+          phone: document.querySelector("#phoneInput").value,
+          email: document.querySelector("#emailInput").value,
+          message: document.querySelector("#messageInput").value,
+          token: document.querySelector(
+            "#contact-form textarea[name='g-recaptcha-response']"
+          ).value,
         },
-      }
-    )
-    .then(function (response) {
-      if (!document.querySelector("#success")) {
-        message.classList.add("success");
-        message.textContent = "Message sent successfully!";
-      }
-    })
-    .catch(function (error) {
-      if (!document.querySelector("#error")) {
-        message.classList.add("error");
-        message.textContent =
-          "Something didn't go quite right there... Message failed to send!";
-      }
-    });
-  document.querySelector("#form__message").appendChild(message);
-  document.querySelector("#submit").disabled = true;
+        {
+          headers: {
+            "Content-Type": "application/json;charset=UTF-8",
+          },
+        }
+      )
+      .then(function (response) {
+        message = createMessage(
+          "Message sent successfully! Thank you for getting in touch.",
+          "success"
+        );
+      })
+      .catch(function (error) {
+        message = createMessage(
+          "Something didn't go quite right there... Message failed to send!",
+          "error"
+        );
+      });
+  }
+
+  document.querySelector("#form__messages").appendChild(message);
+
+  createCookie("recently-sent-message", true, 7);
 }

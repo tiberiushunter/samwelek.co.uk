@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy & Cookie Policy
-description: Last updated 01 Mar 2021
+description: Last updated 08 May 2021
 ---
 
 ## Introduction
@@ -33,11 +33,23 @@ The purpose of this is to track whether or not a user has given us their consent
 
 If the `Decline` button on the banner is clicked then we store that approval has **not been given** and all third party cookies and scripts will be disabled, except for the ones that provide core functionality that without would render the website non functional and useless.
 
-#### Table of Cookies and Scripts Created and Used by Us
+### Cookie: `recently-sent-message`
+
+#### *Retention Period: 7 days*
+
+This cookie is used to determine if the user has submitted a message via the [Contact](/contact/) page in the last 7 days.
+
+The purpose of this is limit the number of messages that are sent by the form and to help prevent spam.
+
+As this is not a required cookie, it is only created after the user accepts cookies on the site and submits a message on the [Contact](/contact/) page.
+
+### Table of Cookies and Scripts Created and Used by Us
 
 Cookie Name | Retention Period (Days) | Purpose | Required?
 ---|:---:|---|:---:
 `cookie-approval-status` | 31 | Consent approval status | Yes :heavy_check_mark:
+`recently-sent-message` | 7 | Tracks messages sent | No :heavy_multiplication_x:
+
 
 ## What Third Parties are involved?
 

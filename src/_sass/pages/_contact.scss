@@ -1,5 +1,12 @@
 #contact-form {
   padding-top: var(--spacer-2);
+
+  #form__messages {
+    .form__message {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
 }
 
 /*Desktop Query*/
