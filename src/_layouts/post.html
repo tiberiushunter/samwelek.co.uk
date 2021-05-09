@@ -40,24 +40,9 @@ layout: default
   {% endif %} {{ content }}
 </article>
 
-{% include social/share-buttons.html %} {% if site.related_posts != empty %} {%
-include social/buy-me-a-coffee.html %}
+{% include social/share-buttons.html %} 
+{% include social/buy-me-a-coffee.html %}
 
-<aside class="related">
-  <h3>You may also enjoy</h3>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-        <small
-          ><time datetime="{{ post.date | date_to_xmlschema }}"
-            >{{ post.date | date_to_string }}</time
-          ></small
-        >
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</aside>
+{% if site.related_posts != empty %} 
+  {% include components/related-posts.html %} 
 {% endif %}

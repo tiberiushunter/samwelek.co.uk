@@ -1,0 +1,15 @@
+<header class="masthead">
+  <div class="masthead-title">
+    <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+
+    <nav class="nav">
+      {% for nav in site.nav %}
+      <small
+        ><a href="{{ site.baseurl }}{{ nav.url }}/"
+          >{{ nav.title }}</a
+        ></small
+      >
+      {% endfor %}
+    </nav>
+  </div>
+</header>
