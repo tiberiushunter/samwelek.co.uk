@@ -66,7 +66,7 @@ Project Link: [GitHub][project-url]
 
 [url]: https://samwelek.co.uk
 
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg?style=for-the-badge
 
 [contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/samwelek.co.uk.svg?style=for-the-badge
 [contributors-url]: https://github.com/tiberiushunter/samwelek.co.uk/graphs/contributors
