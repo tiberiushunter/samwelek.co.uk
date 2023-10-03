@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy & Cookie Policy
-description: Last updated 08 May 2021
+description: Last updated 03 Oct 2023
 ---
 
 ## Introduction
@@ -33,67 +33,15 @@ The purpose of this is to track whether or not a user has given us their consent
 
 If the `Decline` button on the banner is clicked then we store that approval has **not been given** and all third party cookies and scripts will be disabled, except for the ones that provide core functionality that without would render the website non functional and useless.
 
-### Cookie: `recently-sent-message`
-
-#### *Retention Period: 7 days*
-
-This cookie is used to determine if the user has submitted a message via the [Contact](/contact/) page in the last 7 days.
-
-The purpose of this is limit the number of messages that are sent by the form and to help prevent spam.
-
-As this is not a required cookie, it is only created after the user accepts cookies on the site and submits a message on the [Contact](/contact/) page.
-
 ### Table of Cookies and Scripts Created and Used by Us
 
 Cookie Name | Retention Period (Days) | Purpose | Required?
 ---|:---:|---|:---:
 `cookie-approval-status` | 31 | Consent approval status | Yes :heavy_check_mark:
-`recently-sent-message` | 7 | Tracks messages sent | No :heavy_multiplication_x:
-
 
 ## What Third Parties are involved?
 
 Below we have listed the third parties involved with our site to add functionality and improve performance.
-
-### Cookies and Scripts
-
-#### Google Analytics
-
-This website uses Google Analytics. **This only happens if you approve third party cookies and scripts.** We use this service to track page views, current users on the website, and keep track of the website's statistics over time.
-
-However, to help our users maintain their right to privacy, we have taken all the actions we can to limit the power of Google. We have configured Google Analytics to anonymise IP addresses, use SSL at all times, and we have agreed to the [Data Processing Amendment](https://privacy.google.com/businesses/processorterms/) with Google.
-
-##### Table of Cookies and Scripts Created and Used by Google Analytics
-
-We have listed the [Cookiepedia](https://cookiepedia.co.uk/) entry and purpose for each of the five cookies used by Google Analytics to provide a detailed overview of each one.
-
-Cookie Name | Retention Period | Purpose | Detailed Link | Required?
----|:---:|---|---|:---:
-`__utma` | 2 years | Performance | [__utma](https://cookiepedia.co.uk/cookies/__utma) | No :heavy_multiplication_x:
-`__utmb` | 30 minutes | Performance | [__utmb](https://cookiepedia.co.uk/cookies/__utmb) | No :heavy_multiplication_x:
-`__utmc` | *Session* | Performance | [__utmc](https://cookiepedia.co.uk/cookies/__utmc) | No :heavy_multiplication_x:
-`__utmt` | 10 minutes | Performance | [__utmt](https://cookiepedia.co.uk/cookies/__utmt) | No :heavy_multiplication_x:
-`__utmz` | 6 months | Performance | [__utmz](https://cookiepedia.co.uk/cookies/__utmz) | No :heavy_multiplication_x:
-
-#### Google reCAPTCHA v3
-
-This website also uses Google reCAPTCHA v3 which collects certain software and hardware information from users to determine whether or not they are human or a bot.
-
-This is used to prevent spam on the [Contact](/contact/) page.
-
-The reCAPTCHA algorithm checks to see if there is a Google cookie placed on the computer being used. An additional reCAPTCHA-specific cookie will then be added to the user’s browser allowing a complete snapshot of the user’s browser window at that moment in time.
-
-Information gathered includes:
-
-* All cookies placed by Google over the last 6 months
-* How many mouse clicks you’ve made on that screen (or touches on a touch device)
-* The CSS information for that page
-* The date
-* The language your browser is set to
-* Any plugins you have installed on the browser
-* All Javascript objects
-
-You can learn more about Google reCAPTCHA, including Google's Privacy Policy [here](https://policies.google.com/privacy)
 
 #### CloudFlare
 
