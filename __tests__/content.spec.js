@@ -1,14 +1,14 @@
-import { getJekyllData, printOnFail } from '../lib/helpers';
+import { getSiteMetaData, printOnFail } from '../lib/helpers';
 
-describe('Content in Posts', function () {
-  beforeAll(() => {
-    return getJekyllData().then((site) => {
-      this.site = site;
-    });
+describe('Posts', function () {
+  let site;
+
+  beforeAll(async () => {
+    site = await getSiteMetaData();
   });
 
-  test('Posts must contain content', () => {
-    const { posts } = this.site;
+  it('must contain content', () => {
+    const { posts } = site;
 
     posts.forEach((post) => {
       printOnFail(post.path, () => {
@@ -17,8 +17,8 @@ describe('Content in Posts', function () {
     });
   });
 
-  test('Posts content must be longer than 50 characters', () => {
-    const { posts } = this.site;
+  it('must have content longer than 50 characters', () => {
+    const { posts } = site;
 
     posts.forEach((post) => {
       printOnFail(post.path, () => {
@@ -26,5 +26,4 @@ describe('Content in Posts', function () {
       });
     });
   });
-
 });
